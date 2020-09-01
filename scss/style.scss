@@ -7,11 +7,6 @@
 //start header
 
 .header{
-    .logo{
-        img{
-            width: 229px;
-        }
-    }
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -120,7 +115,7 @@
 .main{
     &__container{
         max-width: 1490px;
-        margin-left: 6.2vw;
+        margin-left: 8.2vw;
     }
     &__inner{
        display: flex;
@@ -448,7 +443,7 @@
    }
    &__img{
        position: absolute;
-       right: -350px;
+       right: -392px;
        top: 0;
    }
 }
@@ -459,6 +454,7 @@
 .footer{
     &__inner{
         display: flex;
+        justify-content: space-between;
         align-items: center;
         border-top: 1px solid #DBDBDB;
         box-shadow: 0px 1px 0px #FFFFFF;
@@ -485,7 +481,6 @@
     }
     &__socila-list{
         display: flex;
-        margin: 0px 210px;
     }
     &__social-item{
         width: 35px;
