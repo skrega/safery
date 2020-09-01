@@ -238,37 +238,23 @@
         background-size: inherit;
         background-position: center bottom; 
     }
+    .stages__item-images--color{
+        opacity: 0;
+        background-position: inherit; 
+    }
     &__item:hover{
         .stages__item-img{
-            background-blend-mode: initial;
             background-position: inherit;
-            
-            img{
-                opacity: 0;
-            }
         }
-    }
-    &__item:nth-child(1):hover{
-        .stages__item-img{
-            background-image: url(../images/stages__item-1--color.png);
-          
-           
+        .stages__item-images{
+            display: none;
         }
-    }
-    &__item:nth-child(2):hover{
-        .stages__item-img{
-            background-image: url(../images/stages__item-2--color.png);
-        }
-    }
-    &__item:nth-child(3):hover{
-        .stages__item-img{
-            background-image: url(../images/stages__item-3--color.png);
+        .stages__item-images--color{
+            opacity: 1;
         }
     }
     &__item:nth-child(4):hover{
-        .stages__item-img{
-            background-image: url(../images/stages__item-4--color.png);
-        }
+        
     }
    
     &__item-text{
