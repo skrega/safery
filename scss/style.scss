@@ -63,7 +63,7 @@
         &::before{
             position: absolute;
             content: "";
-            top: -9px;
+            top: -11px;
             width: 40px;
             height: 40px;
             background: #FFFFFF;
@@ -120,7 +120,6 @@
 .main{
     &__container{
         max-width: 1490px;
-        //margin-left: 119px;
         margin-left: 6.2vw;
     }
     &__inner{
@@ -174,7 +173,6 @@
             .deal__images-hover{
                 opacity: 1;
             }
-          
         }
     }
     &__title{
@@ -232,57 +230,44 @@
         height: 150px;
         margin-bottom: 40px;
         border-radius: 50%;
-        background-color: #C4C4C4;
         background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
+        background-blend-mode: soft-light, normal;
         border: 1px solid rgba(255, 255, 255, 0.4);
         box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px #A6ABBD;
         background-repeat: no-repeat;
         background-size: inherit;
         background-position: center bottom; 
     }
-    &__item:nth-child(1){
+    &__item:hover{
         .stages__item-img{
-            background-image: url(../images/stages__item-1.png);
-           // background-size: 69px;
+            background-blend-mode: initial;
+            background-position: inherit;
             
-        }
-        &:hover{
-            .stages__item-img{
-                background-image: url(../images/stages__item-1--color.png);
-               // background-size: 56px;               
+            img{
+                opacity: 0;
             }
         }
     }
-    &__item:nth-child(2){
+    &__item:nth-child(1):hover{
         .stages__item-img{
-            background-image: url(../images/stages__item-2.png);
-        }
-        &:hover{
-            .stages__item-img{
-                background-image: url(../images/stages__item-2--color.png);
-                //background-position: 47px 27px;
-            }
-        }
-      
-    }
-    &__item:nth-child(3){
-        .stages__item-img{
-            background-image: url(../images/stages__item-3.png);
-        }
-        &:hover{
-            .stages__item-img{
-                background-image: url(../images/stages__item-3--color.png);
-            }
+            background-image: url(../images/stages__item-1--color.png);
+          
+           
         }
     }
-    &__item:nth-child(4){
+    &__item:nth-child(2):hover{
         .stages__item-img{
-            background-image: url(../images/stages__item-4.png);
+            background-image: url(../images/stages__item-2--color.png);
         }
-        &:hover{
-            .stages__item-img{
-                background-image: url(../images/stages__item-4--color.png);
-            }
+    }
+    &__item:nth-child(3):hover{
+        .stages__item-img{
+            background-image: url(../images/stages__item-3--color.png);
+        }
+    }
+    &__item:nth-child(4):hover{
+        .stages__item-img{
+            background-image: url(../images/stages__item-4--color.png);
         }
     }
    
