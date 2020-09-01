@@ -238,7 +238,7 @@
         background-size: inherit;
         background-position: center bottom; 
     }
-    .stages__item-images--color{
+    .stages__item-color{
         opacity: 0;
         background-position: inherit; 
     }
@@ -246,10 +246,10 @@
         .stages__item-img{
             background-position: inherit;
         }
-        .stages__item-images{
+        .stages__item-dark{
             display: none;
         }
-        .stages__item-images--color{
+        .stages__item-color{
             opacity: 1;
         }
     }
@@ -259,7 +259,6 @@
         margin-top: 20px;
     }
 }
-
 
 //end stages
 //start useful
