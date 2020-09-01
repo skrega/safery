@@ -272,13 +272,14 @@
         margin-bottom: 100px;
     }
     &__title{
-        max-width: 569px;
+        width: 569px;
         margin-bottom: 70px;
     }
     &__list{
         margin-top: 20px;
         margin-bottom: 70px;
         max-width: 528px;
+        
     }
     &__list-item{
         margin-top: 30px;
@@ -300,90 +301,45 @@
     }
     &__img{
         transition: all .3s;
-        background-size: cover;
-    }
-    &__images-stamp{
-        background-image: url(../images/stamp.png);
-        width: 180px;
-        height: 298px;
-        &:hover{
-            background-image: url(../images/stamp-color.png);
+        .useful__color{
+            display: none;
         }
     }
+    &__img:hover{
+        .useful__dark{
+            display: none;
+        }
+        .useful__color{
+            display: block;
+        }
+    }
+
     &__images-tablet{
-        background-image: url(../images/tablet.png);
-        width: 347px;
-        height: 472px;
-        position: relative;
-        &:hover{
-            background-image: url(../images/tablet-color.png);
-        }
+       position: relative;
     }
     &__images-oranges{
         position: absolute;
-        background-image: url(../images/oranges.png);
-        width: 245px;
-        height: 175px;
-        bottom: 34px;
+        bottom: 115px;
         left: 48px;
-        &:hover{
-            background-image: url(../images/oranges-color.png);
+        .useful__color{
+            position: absolute;
+            bottom: 8px;
         }
     }
     &__images-magnifier{
-        background-image: url(../images/magnifier.png);
-        width: 190px;
-        height: 342px;
         margin-top: 130px;
-        &:hover{
-            background-image: url(../images/magnifier-color.png);
-        }
     }
     &__images-pineapple{
-        background-image: url(../images/pineapple.png);
-        width: 167px;
-        height: 312px;
-        &:hover{
-            background-image: url(../images/pineapple-color.png);
-        }
+        margin-top: -60px;
     }
-    &__images-laptop{
-        background-image: url(../images/laptop.png);
-        width: 421px;
+    &__img-laptop{
         height: 380px;
-        &:hover{
-            background-image: url(../images/laptop-color.png);
-        }
     }
     &__item-individuals{
         display: inline-flex;
     }
     &__images-individuals{
         margin-left: 120px;
-    }
-    &__images-phone{
-        background-image: url(../images/phone.png);
-        width: 214px;
-        height: 317px;
-        &:hover{
-            background-image: url(../images/phone-color.png);
-        }
-    }
-    &__images-headphones{
-        background-image: url(../images/headphones.png);
-        width: 158px;
-        height: 131px;
-        &:hover{
-            background-image: url(../images/headphones-color.png);
-        }
-    }
-    &__images-apple{
-        background-image: url(../images/apple.png);
-        width: 209px;
-        height: 210px;
-        &:hover{
-            background-image: url(../images/apple-color.png);
-        }
     }
 }
 
