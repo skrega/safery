@@ -37,11 +37,6 @@ body{
     font-weight: 300;
     overflow-x: hidden;
 }
-.container{
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
 h1{
     font-size: 50px;
@@ -69,6 +64,12 @@ h4{
 button{
     outline: none;
     cursor: pointer;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .button{
