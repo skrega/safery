@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Safery</title>
     <link rel="stylesheet" href="libs/jQuery-Selectric/selectric.css">
+    <link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
  
@@ -24,7 +25,7 @@
                         <option>Ru</option>
                         <option>En</option>
                     </select>
-                    <a href="#" class="header__btn-login">Войти</a>
+                    <a class="header__btn-login" data-fancybox data-src="#login" href="javascript:;">Войти</a>
                 </div>
             </div>
         </div>
@@ -281,9 +282,9 @@
                         <p class="questions__text">
                             Оставьте свои контактные данные и наш специалист свяжется с вами в ближайшее время
                         </p>
-                        <input type="text" class="questions__form-input input" placeholder="Ваше имя">
-                        <input type="email" class="questions__form-input input" placeholder="Ваш E-mail">
-                        <input type="text" class="questions__form-input input" placeholder="Вашe сообщение">
+                        <input type="text" class="questions__form-input input" placeholder="Ваше имя" required>
+                        <input type="email" class="questions__form-input input" placeholder="Ваш E-mail" required>
+                        <input type="text" class="questions__form-input input" placeholder="Вашe сообщение" required>
                         <button class="questions__form-btn button" type="submit">Отправить</button>
                     </form>
                 </div>
@@ -328,8 +329,29 @@
             </div>
         </div>
     </footer>
+
+
+    <div id="login" class="login__modal">
+        <div class="login__form">
+            <form>
+                <div class="login__title">
+                    Вход
+                </div>
+                <input class="input login__form-input" type="email" placeholder=" E-mail" required>
+                <input class="input login__form-input" type="password" placeholder="Пароль" required>
+                <button class="login__form-btn button" type="submit">Продолжить</button>
+                <a class="login__form-register" href="#">Зарегистрироваться</a>
+                <a class="login__form-problem" href="#">Проблемы со входом?</a>
+            </form>
+           
+        </div>
+    </div>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="libs/jQuery-Selectric/jquery.selectric.min.js"></script>
+    <script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
