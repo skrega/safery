@@ -71,7 +71,6 @@ button{
     padding: 0 15px;
     margin: 0 auto;
 }
-
 .button{
     font-size: 18px;
     line-height: 22px;
@@ -79,10 +78,14 @@ button{
     font-weight: 500;
     padding: 16px 20px;
     width: 250px;
-    background: #7D4F9E;
+    background-color: #7D4F9E;
     border-radius: 7px;
     text-align: center;
     cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        background-color: #55237A;
+    }
 }
 
 .input{
@@ -95,4 +98,27 @@ button{
         color: #9A9D9D;
         font-weight: 300;
     }
+}
+.jq-selectbox{
+    outline: none;
+}
+.jq-selectbox.focused.jqselect{
+    outline: none;
+    border-color: transparent;
+}
+.jq-selectbox__dropdown{
+    font: inherit;
+    color: #4A4A4A;
+    font-size: 15px;
+}
+.jq-selectbox li{
+    &.selected{
+        background-color: #c4c4c4;
+    }
+    &:hover{
+        background-color: #7D4F9E;
+    }
+}
+.jq-selectbox__trigger {
+    border-left: none;
 }

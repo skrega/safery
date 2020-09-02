@@ -16,96 +16,104 @@
         display: flex;
         align-items: center;
     }
-    &__btn-login{
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.07em;
-        color: #4A4A4A;
-        position: relative;
-        &::before{
+    &__btn{
+        display: inline-block;
+        background: #FFFFFF;
+        border: 0.5px solid #E5E5E5;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    &__login{
+        margin-left: 20px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #4A4A4A; 
+        transition: all .3s;
+        svg{
             position: absolute;
+            left: 12px;
+            top: -1px;
+        }
+        &::before{
+            top: -12px;   
+        }
+        &:hover{
+            color: #7D4F9E;
+            svg path{
+                stroke: #7D4F9E;
+            }
+        }
+    }
+    &__language{
+        position: relative;
+        svg{
+            position: absolute;
+            z-index: 11;
+            top: 3px;
+            left: 9px;
+        }
+        &:hover{
+            .jq-selectbox__select{
+                color: #7D4F9E;
+            }
+            svg path{
+                fill: #7D4F9E;
+            }
+        }
+    }
+    .jq-selectbox::before{
+        top: -7px;
+    }
+    &__login,
+    .jq-selectbox{
+        position: relative;
+        padding-left: 52px;
+        &::before{
             content: "";
-            top: -9px;
+            position: absolute;
+            background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+            background-blend-mode: soft-light, normal;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
             width: 40px;
             height: 40px;
-            background: #FFFFFF;
-            border: 0.5px solid #E5E5E5;
-            box-sizing: border-box;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
             border-radius: 50%;
             left: 0;
-            background-position: center center;
-            background-repeat: no-repeat;
         }
     }
-    &__btn-login{
-        padding-left: 50px;
-        margin-left: 26px;
-        &::before{
-            background-image: url(../images/user.svg);
-        }
-    }
-    .selectric-wrapper {
-        margin-top: 19px;
-    }
-    .selectric {
+    .jq-selectbox__select {
+        height: 32px;
+        padding: 0 31px 0 0px;
         border: none;
-        border-radius: 0px;
+        border-bottom-color: transparent;
+        border-radius: 0;
         background: transparent;
-        position: relative;
-        overflow: visible;
-        padding-left: 50px;
-        &::before{
-            position: absolute;
-            content: "";
-            top: -11px;
-            width: 40px;
-            height: 40px;
-            background: #FFFFFF;
-            border: 0.5px solid #E5E5E5;
-            box-sizing: border-box;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            left: 0;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-image: url(../images/language.svg);
-        }
-    }
-    .selectric .label {
-        display: block;
-        white-space: nowrap;
-        overflow: visible;
-        text-overflow: ellipsis;
-        margin: 0 45px 0 0px;
-        font-size: 20px;
-        line-height: 24px;
+        box-shadow: none;
+        font: inherit;
+        font-weight: 400;
         color: #4A4A4A;
-        height: 38px;
-        user-select: none;
+        text-shadow: none;
     }
-    .selectric-items{
-        border: 0.5px solid #B8B8B8;
-        border-radius: 5px;
-    }
-   
-    .selectric .button {
-        display: block;
+    .jq-selectbox__trigger-arrow {
         position: absolute;
-        right: -5px;
-        top: 7px;
-        width: 38px;
-        height: 20px;
-        padding: 0;
-        line-height: 38px;
-        background-color: transparent;
-        color: #BBB;
-        text-align: center;
+        top: 10px;
+        right: 12px;
+        width: 15px;
+        height: 12px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
         background-image: url(../images/select-arrow.svg);
         background-repeat: no-repeat;
+        background-position: center center;
     }
-    .selectric .button:after{
-        display: none;
+    .jq-selectbox.focused .jq-selectbox__select{
+        border-color: transparent;
+        border: none;
     }
 }
 
@@ -365,7 +373,7 @@
     &__form-btn{
         background-color: #FFC575;
         color: #6A3492;
-        line-height: 22px;
+        line-height: 17px;
         max-width: 250px;
         width: 100%;
         padding: 16px 5px;
@@ -374,44 +382,50 @@
         outline: none;
         border-radius: 7px;
         cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            background-color: #F0972C;
+        }
     }
-    .selectric-wrapper{
+    .jq-selectbox {
         width: 350px;
     }
-    .selectric .label {
-        display: block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 8px 38px 0 10px;
+    .jq-selectbox__select {
+        height: 48px;
+        padding: 9px 13px;
+        border: 0.5px solid #B8B8B8;
+        border-bottom-color: #B8B8B8;
+        border-radius: 7px;
+        background: transparent;
+        box-shadow: none;
+        font: inherit;
         font-size: 18px; 
         line-height: 29px;
         color: #9A9D9D;
-        height: 38px;
         font-weight: 300;
+        text-shadow: none;
     }
-    .selectric {
-        border: 0.5px solid #B8B8B8;
-        border-radius: 7px;
-        background: transparent;
-        position: relative;
-        overflow: hidden;
+    .jq-selectbox__select-text{
+        overflow: inherit;
     }
-    .selectric .button:after {
-        content: " ";
+    
+    .jq-selectbox__trigger-arrow {
         position: absolute;
-        top: 5px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
+        top: 19px;
+        right: 12px;
         width: 0;
         height: 0;
-        border: 7px solid transparent;
-        border-top-color: #C4C4C4;
-        border-bottom: none;
+        border-top: 11px solid #C4C4C4;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
     }
-
+    .jq-selectbox:hover .jq-selectbox__trigger-arrow {
+        border-top-color: #4A4A4A;
+    }
+    .jq-selectbox.focused .jq-selectbox__select{
+        border: 0.5px solid #B8B8B8;
+    }
+    
 }
 
 //end calculator
@@ -442,6 +456,7 @@
        right: -392px;
        top: 0;
    }
+   
 }
 
 //end questions
@@ -458,7 +473,6 @@
     }
     &__copy,
     &__disign{
-        @extend %fs-light;
         font-size: 13px;
         line-height: 16px;
     }
@@ -494,9 +508,32 @@
     &__disign{
         display: flex;
         align-items: center;
+        z-index: 10; 
+        transition: all .4s;
+        cursor: pointer;
+        &:hover{
+            color: #7D4F9E;
+        }
     }   
     &__disign-logo{
         margin-left: 14px;
+    }
+    &__social-link{
+       svg path{
+            transition: all .4s;
+       }
+        &:hover{
+            svg path{  
+                //stroke: #7D4F9E;
+                fill: #7D4F9E;
+            }
+        }
+    }
+    &__social-link.mail:hover{
+        svg path{  
+            stroke: #7D4F9E;
+            fill: transparent;
+        }
     }
 }
 
@@ -554,6 +591,61 @@
 
 //end login__modal
 
+
+// .action {
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	background: none;
+// 	margin: 2rem;
+// 	color: var(--color-action);
+// 	border: 0;
+// 	padding: 0;
+// 	opacity: 0;
+// 	pointer-events: none;
+// }
+
+// .action:focus {
+// 	outline: none;
+// }
+
+// .theme-1 {
+// 	--color-item-bg: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+// 	--color-action: #121019;
+// 	--color-button-bg: #121019;
+// 	--color-button-text: #fff;
+// 	--button-padding: 1.5rem 3rem;
+// 	--radius-button: 5px;
+// 	--border-button: 0;
+// }
+
+// .particles-button {
+// 	-webkit-touch-callout: none;
+// 	-webkit-user-select: none;
+// 	-khtml-user-select: none;
+// 	-moz-user-select: none;
+// 	-ms-user-select: none;
+// 	user-select: none;
+// 	position: relative;
+// 	border-radius: 5px;
+// 	border-radius: var(--radius-button);
+// 	background: var(--color-button-bg);
+// 	color: var(--color-button-text);
+// 	border: 0;
+// 	border: var(--border-button);
+// 	margin: 0;
+// 	padding: 1.5rem 3rem;
+// 	padding: var(--button-padding);
+// 	will-change: transform;
+// }
+
+// .particles-button:focus {
+// 	outline: none;
+// }
+
+// .no-js .particles-button {
+// 	grid-area: 1 / 1 / 2 / 2;
+// }
 
 
 
