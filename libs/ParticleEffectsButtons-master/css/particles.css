@@ -41,7 +41,7 @@
 .particles-button:focus {
 	outline: none;
 }
-
+.particles-canvas{}
 .no-js .particles-button {
 	grid-area: 1 / 1 / 2 / 2;
 }
