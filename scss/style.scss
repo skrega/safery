@@ -223,7 +223,7 @@
     &__item-img{
         width: 150px;
         height: 150px;
-        margin-bottom: 40px;
+        margin: 0 11px 40px;
         border-radius: 50%;
         background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
         background-blend-mode: soft-light, normal;
@@ -245,12 +245,8 @@
         .stages__item-img{
             background-position: inherit;
         }
-        .stages__item-dark{
-            opacity: 0;
-        }
         .stages__item-color{
             opacity: 1;
-            
         }
     }
     &__item-text{
@@ -299,17 +295,19 @@
         display: flex;
     }
     &__img{
+        position: relative; 
         transition: all .5s;
         .useful__color{
-            display: none;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .5s;
         }
     }
     &__img:hover{
-        .useful__dark{
-            display: none;
-        }
         .useful__color{
-           display: block;
+           opacity: 1;
         }
     }
 
@@ -331,19 +329,12 @@
     &__images-pineapple{
         margin-top: -60px;
     }
-    &__img-laptop{
-        height: 380px;
-    }
     &__item-individuals{
         display: inline-flex;
     }
     &__images-individuals{
         margin-left: 120px;
     }   
-    &__images-headphones{
-        height: 140px;
-    }
-
 }
 
 //end useful
