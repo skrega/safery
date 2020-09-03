@@ -8,8 +8,8 @@ $(function(){
     
     const items = document.querySelectorAll('.button__wrapper');
     items.forEach((el, pos) => {
-        const bttn = el.querySelector('button.particles-button');
-        const bttnBack = el.querySelector('button.action');
+        const bttn = el.querySelector('a.particles-button');
+        const bttnBack = el.querySelector('a.action');
         
         let particlesOpts = arrOpts[pos];
         particlesOpts.complete = () => {

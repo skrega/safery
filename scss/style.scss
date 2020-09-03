@@ -116,6 +116,23 @@
         border: none;
     }
 }
+.language__select{
+    position: relative;
+    svg{
+        position: absolute;
+        z-index: 11;
+        top: 3px;
+        left: 9px;
+    }
+    &:hover{
+        .jq-selectbox__select{
+            color: #7D4F9E;
+        }
+        svg path{
+            fill: #7D4F9E;
+        }
+    }
+}
 
 //end header
 //start main

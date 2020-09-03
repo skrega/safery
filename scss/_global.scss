@@ -71,22 +71,6 @@ button{
     padding: 0 15px;
     margin: 0 auto;
 }
-.button{
-    font-size: 18px;
-    line-height: 22px;
-    color: #fff;
-    font-weight: 500;
-    padding: 16px 20px;
-    width: 250px;
-    background-color: #7D4F9E;
-    border-radius: 7px;
-    text-align: center;
-    cursor: pointer;
-    transition: all .3s;
-    &:hover{
-        background-color: #55237A;
-    }
-}
 
 .input{
     border: 0.5px solid #B8B8B8;
@@ -99,6 +83,8 @@ button{
         font-weight: 300;
     }
 }
+
+//select start
 .jq-selectbox{
     outline: none;
 }
@@ -126,6 +112,26 @@ button{
 }
 
 
+//select end
+
+.button{
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 500;
+    padding: 16px 20px;
+    width: 250px;
+    background-color: #7D4F9E;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        background-color: #55237A;
+    }
+}
+
+// animation button start
 .action {
 	position: absolute;
 	top: 0;
@@ -141,33 +147,6 @@ button{
 .action:focus {
 	outline: none;
 }
-
-.button__wrapper {
-	// --color-item-bg: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
-	// --color-action: #121019;
-	// --color-button-bg: #121019;
-	// --color-button-text: #fff;
-	// --button-padding: 1.5rem 3rem;
-	// --radius-button: 5px;
-    // --border-button: 0;
-}
-// .button{
-//     font-size: 18px;
-//     line-height: 22px;
-//     color: #fff;
-//     font-weight: 500;
-//     padding: 16px 20px;
-//     width: 250px;
-//     background-color: #7D4F9E;
-//     border-radius: 7px;
-//     text-align: center;
-//     cursor: pointer;
-//     transition: all .3s;
-//     &:hover{
-//         background-color: #55237A;
-//     }
-// }
-
 .particles-button {
 	user-select: none;
 	position: relative;
@@ -180,19 +159,18 @@ button{
 	padding: 16px 20px;
     will-change: transform;
     width: 250px;
+    display: block;
+    text-align: center;
     &:hover{
         background-color: #55237A;
     }
 }
-
 .particles-button:focus {
 	outline: none;
 }
-
 .particles {
 	position: relative;
 }
-
 .particles-canvas {
 	position: absolute;
 	pointer-events: none;
@@ -200,7 +178,6 @@ button{
 	left: 120px;
 	transform: translate3d(-50%,-50%,0);
 }
-
 .particles-wrapper {
 	position: relative;
 	display: inline-block;
@@ -208,3 +185,59 @@ button{
 	will-change: transform;
 }
 
+// animation button end
+//language select start 
+
+.language__select{
+    .jq-selectbox::before{
+        top: -7px;
+    }
+    .jq-selectbox{
+        position: relative;
+        padding-left: 52px;
+        &::before{
+            content: "";
+            position: absolute;
+            background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+            background-blend-mode: soft-light, normal;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            left: 0;
+        }
+    }
+    .jq-selectbox__select {
+        height: 32px;
+        padding: 0 31px 0 0px;
+        border: none;
+        border-bottom-color: transparent;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        font: inherit;
+        font-weight: 400;
+        color: #4A4A4A;
+        text-shadow: none;
+    }
+    .jq-selectbox__trigger-arrow {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 15px;
+        height: 12px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background-image: url(../images/select-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .jq-selectbox.focused .jq-selectbox__select{
+        border-color: transparent;
+        border: none;
+    }
+}
+
+//language select end 
