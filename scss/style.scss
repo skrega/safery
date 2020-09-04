@@ -743,18 +743,12 @@
         line-height: 35px;
     }
     &__balance-btn{
-        position: relative;
-        &::before{
-            position: absolute;
-            content: "";
-            background-image: url(../images/withdraw-icon.svg);
-            background-repeat: no-repeat;
-            width: 25px;
-            height: 25px;
-            background-size: cover;
-            left: 54px;
-            top: 16px;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__balance-icon{
+        margin-right: 10px;
     }
     &__deal{
         padding: 35px 0;
