@@ -21,7 +21,14 @@ $(function(){
         return false;
     });
 
-
+    $('.profile__navigatin-box').hover(
+        function() {
+            $(this).find('a').addClass('visible');
+        },
+        function() {
+            $(this).find('a').removeClass('visible');
+        }
+    );
 
     const arrOpts = [
         {},{},{},{},{},{},{},{},{},{},{}

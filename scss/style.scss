@@ -688,6 +688,88 @@
         background-color: rgba(214, 214, 214, 0.33);
         padding: 10px 0;
     }
+    &__navigatin-box{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            right: 0;
+            top: 30px;
+        }
+        &:hover{
+            .profile__notofication-info{
+                opacity: 1;
+                height: auto;
+                overflow: hidden;
+                border: 1px solid #E5E5E5;
+            }
+        }
+    }
+    &__navigatin-notofication{
+        display: block;
+        position: relative;
+        span{
+            position: absolute;
+            background-color: #F0972C;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            right: 6px;
+            top: 8px;
+            z-index: 10;    
+        }
+    }
+    &__notofication-info{
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 504px;
+        height: 0;
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        top: 48px;
+        opacity: 0;
+        transition: all .4s;
+    }
+    &__notofication-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 10px 13px 25px;
+        border-bottom: 0.5px solid #E5E5E5;
+    }
+   &__notofication-count{
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 400;
+        padding: 2px 7px;
+        background-color:#F0972C;
+        border-radius: 50%;
+    }  
+    &__notofication-onread{
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: underline;
+        color: #646464;
+        background-color: transparent;
+        @extend %roboto-m;
+    }  
+    &__notofication-content{
+        padding: 30px 10px 34px 25px;
+    }
+    &__notofication-text{
+        margin: 20px 0 15px;
+        font-size: 16px;
+        line-height: 23px;
+        width: 420px;
+    }
+    &__notofication-date{
+        font-size: 16px;
+        line-height: 23px;
+        color: #817F7F;
+    }
     &__navigatin-items{
         display: flex;
         justify-content: flex-end;
