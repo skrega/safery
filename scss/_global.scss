@@ -64,12 +64,32 @@ h4{
 button{
     outline: none;
     cursor: pointer;
+    border: none;
+}
+
+input{
+    outline: none;
 }
 
 .container{
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.profile__container{
+    max-width: 1566px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.inner{
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #F6F6F6;
+    background-blend-mode: soft-light, normal;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px rgba(166, 171, 189, 0.37);
+    border-radius: 7px;
 }
 
 .input{
@@ -81,6 +101,59 @@ button{
     &::placeholder{
         color: #9A9D9D;
         font-weight: 300;
+    }
+}
+
+.button{
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 500;
+    padding: 16px 20px;
+    width: 250px;
+    background-color: #7D4F9E;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        background-color: #55237A;
+    }
+}
+
+.grey__btn{
+    background-color: #DCDCDC;
+    border-radius: 7px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4A4A4A;
+    padding: 19px 10px 15px;
+    width: 250px;
+    @extend %roboto-m;
+    transition: all .4s;
+    &:hover{
+        background-color: #9A9D9D;
+    }
+}
+
+.icon-warpper{
+    position: relative;
+    background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 0;
+    transition: all .3s;
+    svg{
+        position: absolute;   
+    }
+    &:hover{
+        svg path{
+        fill: #7D4F9E; 
+        }    
     }
 }
 
@@ -113,23 +186,6 @@ button{
 
 
 //select end
-
-.button{
-    font-size: 18px;
-    line-height: 22px;
-    color: #fff;
-    font-weight: 500;
-    padding: 16px 20px;
-    width: 250px;
-    background-color: #7D4F9E;
-    border-radius: 7px;
-    text-align: center;
-    cursor: pointer;
-    transition: all .3s;
-    &:hover{
-        background-color: #55237A;
-    }
-}
 
 // animation button start
 .action {

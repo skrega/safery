@@ -2,6 +2,27 @@ $(function(){
 
     $('select').styler();
 
+    $("#user-rate").rateYo({
+        rating: 4,
+        starWidth: "15px",
+        normalFill: "#C4C4C4",
+        ratedFill: "#FABB6F",
+        readOnly: true
+    });
+    
+
+
+    $('.profile__tabs .tab, .settings__tabs, .tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.profile__tabs, .settings__tabs').find('.tab-item').removeClass('active-tab').hide();
+        $('.profile__tabs .tabs, .settings__tabs, .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
+
+
     const arrOpts = [
         {},{},{},{},{},{},{},{},{},{},{}
     ];

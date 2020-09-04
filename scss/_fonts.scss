@@ -30,12 +30,13 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face{
-    font-family: 'FiraSans-Light', sans-serif;
-    src: url('../fonts/FiraSans-Light.woff2') format('woff2'),
-         url('../fonts/FiraSans-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'Roboto-Black', sans-serif;
+    src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+         url('../fonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
+
+
