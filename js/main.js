@@ -31,7 +31,7 @@ $(function(){
     );
 
     $('.details-btn').on('click', function () {
-        $('.profile__tab-descr, .profile__tab-info').toggleClass('active');
+        $('.profile__tab-descr, .profile__tab-info, .profile__tab-options').toggleClass('active');
     });
 
     const arrOpts = [
