@@ -287,9 +287,9 @@
                                 <div class="profile__tab-options">
                                     <div class="profile__options-inner">
                                         <div class="profile__options-items">
-                                            <a class="profile__options-item underline" href="#">Отменить сделку</a>
-                                            <a class="profile__options-item underline" href="#">Оспорить сделку</a>
-                                            <a class="profile__options-item underline" href="#">Изменить условия</a>
+                                            <a class="profile__options-item underline question" data-fancybox data-src="#deal__cancel" href="javascript:;">Отменить сделку</a>
+                                            <a class="profile__options-item underline question" data-fancybox data-src="#deal__change" href="javascript:;">Оспорить сделку</a>
+                                            <a class="profile__options-item underline question" href="#">Изменить условия</a>
                                         </div>
                                         <a class="profile__options-btn button" href="#">Подтвердить выполнение</a>
                                     </div>
@@ -341,6 +341,66 @@
         </div>
     </section>
     
+
+
+    <div id="deal__cancel" class="deal__cancel options__modal" style="display: none;">
+        <div class="deal__cancel-inner">
+            <h2 class="deal__cancel-title options__modal-title">
+                Вы уверены, что хотите отменить сделку?
+            </h2>
+            <div class="deal__cancel-text">
+                <p>Вашему партнеру будет отправлено уведомление.В случае его согласия сделка будет остановлена.</p>
+                <p>В случае несогласия (или игнорирования) сделка останется активна.</p>
+                <p>Зарезервированная сумма будет перечислена на счет покупателя.</p>
+                <p>Комиссия будет удержана с покупателя.</p>
+            </div>
+            <div class="deal__modal-option">
+                <button class="deal__cancel-back transparent-btn" data-fancybox-close>
+                    Назад
+                </button>
+                <a href="#" class="deal__cancel-next button">
+                    Продолжить
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="deal__change" class="deal__change options__modal" style="display: none;">
+        <div class="deal__change-form">
+            <form>
+                <h2 class="deal__change-title options__modal-title">
+                    Вы собираетесь изменить условия сделки
+                </h2>
+                <div class="deal__change-text">
+                    <p>Вашему партнеру будет отправлено уведомление. </p>
+                    <p>В случае его согласия условия сделки будут изменены.</p>
+                    <p>В случае несогласия (или игнорирования) условия сделки останутся прежними.</p>
+                </div>
+                <div class="deal__change-form__title">
+                    Введите новые условия:
+                </div>
+                <div class="deal__change-box">
+                    <div class="deal__change-row">
+                        <div class="deal__change-content question">Сумма сделки</div>
+                        <input class="input" type="text" placeholder="1 000$" required>
+                    </div>
+                    <div class="deal__change-row">
+                        <div class="deal__change-content question">Срок окончания сделки</div>
+                        <input class="input" type="date" name="calendar">
+                    </div>
+                </div>
+                <div class="deal__modal-option">
+                    <button class="deal__change-back transparent-btn" data-fancybox-close>
+                        Назад
+                    </button>
+                    <button class="deal__change-next button" type="submit">
+                        Отправить предложение
+                    </button>
+                </div>
+               
+            </form>
+        </div>
+    </div>
 
 
 

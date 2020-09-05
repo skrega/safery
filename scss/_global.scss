@@ -1,3 +1,6 @@
+@import 'vars';
+@import 'fonts';
+
 html{
     box-sizing: border-box;
 }
@@ -139,12 +142,47 @@ input{
     }
 }
 
+.transparent-btn{
+    color: #B8B8B8;
+    border: 1px solid #B8B8B8;
+    border-radius: 7px;
+    width: 250px;
+    background-color: transparent;
+    padding: 15px;
+    font-weight: 300;
+    transition: all .4s;
+    &:hover{
+        border-color: #9A9D9D; 
+        color: #9A9D9D;
+    }
+}
+
 .underline{
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
     color: #646464;
     text-decoration: underline;
+}
+
+.question{
+    position: relative;
+    &::before{
+        content: "?";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #717070;
+        right: 0;
+        top: -1px;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .icon-warpper{
@@ -314,3 +352,105 @@ input{
 }
 
 //language select end 
+
+//start login__modal
+.login{
+    &__modal{
+        background-color: #F5F5F5;
+        border-radius: 7px;
+        max-width: 350px;
+        padding: 50px 50px 31px;
+    }
+    &__title{
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #6A3492;
+        margin-bottom: 10px;
+    }
+    &__form-input{
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__form-btn{
+        margin-top: 50px;
+        border: none;
+    }
+    &__form-register,
+    &__form-problem{
+        font-weight: 400;
+        text-align: center;
+        display: block;
+        text-decoration-line: underline;
+    }
+    &__form-register{
+        font-size: 16px;
+        line-height: 19px;
+        color: #646464;
+        margin: 20px 0 10px;
+    }
+    &__form-problem{
+        font-size: 13px;
+        line-height: 15px;
+        color: #999999;
+    }
+}
+.fancybox-is-open .fancybox-bg{
+    background: rgba(43, 5, 71, 0.6);
+    backdrop-filter: blur(17px);
+}
+.fancybox-button svg path{
+    color: #646464;
+}
+
+//end login__modal
+//start deal__cancel
+.options__modal{
+    background-color: #F5F5F5;
+    border-radius: 7px; 
+    max-width: 920px;
+}
+.options__modal-title{
+    color: #6A3492;
+    margin-bottom: 50px;
+    font-weight: 900;
+}
+.deal__modal-option{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.deal{
+    &__cancel-inner{
+        padding: 6px 0;
+    }
+    &__cancel-next{
+        display: block;
+    }
+}
+
+//end deal__cancel
+//start deal__change
+
+.deal{
+    &__change-form__title{
+        margin: 30px 0 5px;
+        font-weight: 400;
+    }
+
+    &__change-row{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+
+    }
+    &__change-content{
+        line-height: 21px;
+        color: #646464;   
+        padding-right: 35px;  
+        margin-right: 50px;
+    }
+}
+
+//end deal__change

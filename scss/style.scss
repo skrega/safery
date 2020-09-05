@@ -560,58 +560,6 @@
 }
 
 //end footer
-//start login__modal
-.login{
-    &__modal{
-        background-color: #F5F5F5;
-        border-radius: 7px;
-        max-width: 350px;
-        padding: 50px 50px 31px;
-    }
-    &__title{
-        font-weight: 900;
-        font-size: 30px;
-        line-height: 35px;
-        text-align: center;
-        color: #6A3492;
-        margin-bottom: 10px;
-    }
-    &__form-input{
-        width: 100%;
-        margin-top: 20px;
-    }
-    &__form-btn{
-        margin-top: 50px;
-        border: none;
-    }
-    &__form-register,
-    &__form-problem{
-        font-weight: 400;
-        text-align: center;
-        display: block;
-        text-decoration-line: underline;
-    }
-    &__form-register{
-        font-size: 16px;
-        line-height: 19px;
-        color: #646464;
-        margin: 20px 0 10px;
-    }
-    &__form-problem{
-        font-size: 13px;
-        line-height: 15px;
-        color: #999999;
-    }
-}
-.fancybox-is-open .fancybox-bg{
-    background: rgba(43, 5, 71, 0.6);
-    backdrop-filter: blur(17px);
-}
-.fancybox-button svg path{
-    color: #646464;
-}
-
-//end login__modal
 
 //page profile start
 
@@ -1061,24 +1009,7 @@
         align-items: center;
     }
     &__options-item{
-        position: relative;
         padding-right: 30px;
-        &::before{
-            content: "?";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 1px solid #717070;
-            right: 0;
-            top: -1px;
-            font-size: 12px;
-            line-height: 16px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
     }
     .profile__options-item + .profile__options-item {
         margin-left: 35px;
