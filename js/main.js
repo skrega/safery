@@ -30,6 +30,10 @@ $(function(){
         }
     );
 
+    $('.details-btn').on('click', function () {
+        $('.profile__tab-descr, .profile__tab-info').toggleClass('active');
+    });
+
     const arrOpts = [
         {},{},{},{},{},{},{},{},{},{},{}
     ];

@@ -795,7 +795,7 @@
         top: -4px;
     }
     &__balance{
-        margin: 0 0 50px ;
+        margin: 50px 0 50px ;
     }
     &__suptitle{
         font-size: 18px;
@@ -865,6 +865,10 @@
             line-height: 47px;
             border-radius: 7px 0px 0px 7px;
         }
+    }
+
+    &__tabs{
+        margin-bottom: 20px;
     }
 
     &__tabs-inner{
@@ -965,7 +969,7 @@
             background-color: #83FB4A;
         }
     }
-    &__tab-info{
+    &__tab-inner{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -996,9 +1000,76 @@
     .tab-item__btn{
        margin-right: 20px; 
     }
+    &__tab-info.active{
+        display: flex;
+        align-items: center;
+    }
+    &__tab-descr{
+        display: none;
+        padding: 35px 13px 42px 20px;
+        border-right: 0.5px solid #C4C4C4;
+        max-width: 870px;
+        width: 100%;
+    }
+    &__tab-descr.active{
+        display: block;
+    }
+    &__tab-detailed{
+        display: none;
+    }
+    &__tab-text{
+        font-size: 16px;
+        line-height: 29px;
+        margin-bottom: 30px;
+    }
+    &__tab-images{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__tab-tumb{
+        width: 140px;
+        height: 120px;
+        border: 0.5px solid #C4C4C4;
+        border-radius: 7px;
+    }
+    &__tab-row{
+        padding: 20px 20px 10px; 
+        display: none;
+    }
+    &__tab-row:nth-child(2){
+        border-bottom: 0.5px solid #C4C4C4;
+    }
+
+    &__tab-content{
+        color: #646464;
+        font-weight: 400;
+        margin-bottom: 10px;
+        span{
+            @extend %roboto-m;
+            color: #000;
+        }
+    }
 }
 
-
+.profile__tab-info.active{
+    .tab-item__btn{
+        display: none;
+    }
+    .profile__tab-inner{
+        align-items: inherit;
+        border-bottom: 0.5px solid #C4C4C4;
+    }
+    .profile__tab-box{
+        width: 300px;
+    }
+    .profile__tab-details span{
+        display: none;
+    }
+    .profile__tab-row{
+        display: block;
+    }
+}
 //page profile end
 
 
