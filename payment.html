@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +11,9 @@
     <link rel="stylesheet" href="libs/rateyo/jquery.rateyo.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-
 </head>
-
 <body>
+    
     <div class="profile">
         <div class="profile__aside">
             <a href="#" class="profile__logo">
@@ -128,181 +126,52 @@
                         </div>
                     </div>
                 </section>
-                <section class="profile-deal">
+                <section class="payment profile__item">
                     <div class="profile__container">
-                        <div class="profile__item profile__deal inner">
-                            <div class="profile__deal-title profile__item-head">Мои сделки</div>
-                            <div class="profile__deal-creat">
-                                <a href="creating-firts.html" class="profile__deal-button button">
-                                    <span>+</span>
-                                    Создать сделку
-                                </a>
+                        <div class="payment__inner inner">
+                            <div class="profile__item-head">
+                                резервирование средств
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="profile-tabs">
-                    <div class="profile__container">
-                        <div class="profile__tabs">
-                            <div class="profile__tabs-inner">
-                                <div class="profile__tabs-buttons tabs">
-                                    <span class="profile__tab-btn tab" data-id="1">Все</span>
-                                    <span class="profile__tab-btn tab active" data-id="2">Активные</span>
-                                </div>
-                                <div class="profile__search">
-                                    <form>
-                                        <input class="profile__search-input" type="text" placeholder="Поиск по сделкам">
-                                        <button class="profile__search-btn" type="submit">
-                                            <img src="images/search-icon.svg" alt="">
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>  
-                            <div class="profile__tabs-content profile__item inner">
-                                <div class="profile__tab-item tab-item" id="1">
-                                    <div class="profile__tab-wrapper deal__about">
-                                        <div class="profile__tab-head deal__about-head">
-                                            <div class="profile__tab-title deal__about-title">Разработка сайта</div>
-                                            <div class="profile__tab-status">Выполняется</div>
-                                        </div>
-                                        <div class="profile__tab-info deal__about-info">
-                                            <div class="profile__tab-column profile__tab-descr deal__about-descr">
-                                                <p class="profile__tab-text deal__about-text">
-                                                    Необходимо разработать дизайн интернет-магазина по продаже электроники. Примерная структура страниц есть, но требует доработки. Все необходимые материалы будут предоставлены заказчиком в течение суток. исполнитель обязуется выполнить работу в срок и передать макет заказчику. в приложении структура, предоставленная заказчиком.
-                                                </p>
-                                                <div class="profile__tab-images deal__about-images">
-                                                    <div class="profile__tab-tumb deal__about-tumb">
-                                                        <img src="images/descr__tumb-1.jpg  " alt="">
-                                                    </div>
-                                                    <div class="profile__tab-tumb deal__about-tumb">
-                                                        <img src="images/descr__tumb-2.jpg  " alt="">
-                                                    </div>
-                                                    <div class="profile__tab-tumb deal__about-tumb">
-                                                        <img src="images/descr__tumb-3.jpg" alt="">
-                                                    </div>
-                                                    <div class="profile__tab-tumb deal__about-tumb">
-                                                        <img src="images/descr__tumb-4.jpg  " alt="">
-                                                    </div>
-                                                    <div class="profile__tab-tumb deal__about-tumb"></div>
-                                                </div>
+                            <div class="payment__form">
+                                <form>
+                                    <div class="payment__row">
+                                        <div class="payment__content question">
+                                            <div class="payment__title">
+                                                Сумма сделки
                                             </div>
-                                            <div class="profile__tab-column deal__about-column">
-                                                <div class="profile__tab-inner deal__about-inner">
-                                                    <div class="profile__tab-box deal__about-box">
-                                                        <div class="tab-item__title suptitle deal__about-content">
-                                                            Сумма сделки
-                                                        </div>
-                                                        <div class="profile__tab-details deal__about-details">
-                                                            1 000$
-                                                        </div>
-                                                    </div>
-                                                    <div class="profile__tab-box">
-                                                        <div class="tab-item__title suptitle deal__about-content">
-                                                            Дата завершения
-                                                        </div>
-                                                        <div class="profile__tab-details deal__about-details">
-                                                            20.09.20
-                                                            <span>(осталось 70 дней, 3 часа)</span>
-                                                        </div>
-                                                    </div>
-                                                    <button class="grey__btn tab-item__btn details-btn deal__about-btn">
-                                                        Детали
-                                                    </button>
-                                                </div>
-                                                <div class="profile__tab-row deal__about-row">
-                                                    <div class="profile__tab-content deal__about-content">Комиссия: <span>30$</span></div>
-                                                    <div class="profile__tab-content deal__about-content">Комиссию платит: <span>Покупатель</span></div>
-                                                </div>
-                                                <div class="profile__tab-row deal__about-row">
-                                                    <div class="profile__tab-content deal__about-content">Покупатель: <span>antoshkina1991@mail.ru</span></div>
-                                                    <div class="profile__tab-content deal__about-content">Продавец: <span></span></div>
-                                                </div>
-                                            </div> 
+                                            <div class="payment__text">
+                                                С учетом комиссии
+                                            </div>
+                                        </div>
+                                        <div id="payment__price" class="payment__price input">
+                                            1030$
                                         </div>
                                     </div>
-                                    <div class="profile__tab-options">
-                                        <div class="profile__options-inner">
-                                            <div class="profile__options-items">
-                                                <a class="profile__options-item underline" href="#">Отменить сделку</a>
-                                                <a class="profile__options-item underline" href="#">Оспорить сделку</a>
-                                                <a class="profile__options-item underline" href="#">Изменить условия</a>
+                                    <div class="payment__row">
+                                        <div class="payment__content">
+                                            <div class="payment__title question">
+                                                Способ оплаты
                                             </div>
-                                            <a class="profile__options-btn button" href="#">Подтвердить выполнение</a>
+                                        </div>
+                                        <div class="payment__pay">
+                                            <div class="radio-inner">
+                                                <input id="payment-card" class="payment-radio radio-btn " name="payment-radio" type="radio" checked>
+                                                <label class="payment-label active label-radio" for="payment-card">Платежная карта</label>
+                                            </div>
+                                            <div class="radio-inner">
+                                                <input id="payment-qiwi" class="profile__output-radio radio-btn " name="payment-radio" type="radio">
+                                                <label class="payment-label label-radio" for="payment-qiwi">Qiwi wallet</label>
+                                            </div>
+                                            <div class="radio-inner">
+                                                <input id="payment-yandex" class="profile__output-radio radio-btn " name="payment-radio" type="radio">       
+                                                <label class="payment-label label-radio" for="payment-yandex">Yandex.money</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="profile__tab-item tab-item active-tab" id="2">
-                                    <div class="profile__tab-wrapper deal__about">
-                                        <div class="profile__tab-head deal__about-head">
-                                            <div class="profile__tab-title deal__about-title">Разработка сайта</div>
-                                            <div class="profile__tab-status">Выполняется</div>
-                                        </div>
-                                        <div class="profile__tab-info">
-                                            <div class="profile__tab-column profile__tab-descr deal__about-descr">
-                                                <p class="profile__tab-text deal__about-text">
-                                                    Необходимо разработать дизайн интернет-магазина по продаже электроники. Примерная структура страниц есть, но требует доработки. Все необходимые материалы будут предоставлены заказчиком в течение суток. исполнитель обязуется выполнить работу в срок и передать макет заказчику. в приложении структура, предоставленная заказчиком.
-                                                </p>
-                                                <div class="profile__tab-images deal__about-images">
-                                                    <div class="profile__tab-tumb deal__about-tumb">
-                                                        <img src="images/descr__tumb-1.jpg  " alt="">
-                                                    </div>
-                                                    <div class="profile__tab-tumb deal__about-tumb">
-                                                        <img src="images/descr__tumb-2.jpg  " alt="">
-                                                    </div>
-                                                    <div class="profile__tab-tumb deal__about-tumb">
-                                                        <img src="images/descr__tumb-3.jpg" alt="">
-                                                    </div>
-                                                    <div class="profile__tab-tumb deal__about-tumb">
-                                                        <img src="images/descr__tumb-4.jpg  " alt="">
-                                                    </div>
-                                                    <div class="profile__tab-tumb deal__about-tumb"></div>
-                                                </div>
-                                            </div>
-                                            <div class="profile__tab-column deal__about-column">
-                                                <div class="profile__tab-inner">
-                                                    <div class="profile__tab-box">
-                                                        <div class="tab-item__title suptitle deal__about-content">
-                                                            Сумма сделки
-                                                        </div>
-                                                        <div class="profile__tab-details deal__about-details">
-                                                            1 000$
-                                                        </div>
-                                                    </div>
-                                                    <div class="profile__tab-box">
-                                                        <div class="tab-item__title suptitle deal__about-content">
-                                                            Дата завершения
-                                                        </div>
-                                                        <div class="profile__tab-details deal__about-details">
-                                                            20.09.20
-                                                            <span>(осталось 70 дней, 3 часа)</span>
-                                                        </div>
-                                                    </div>
-                                                    <button class="grey__btn tab-item__btn details-btn">
-                                                        Детали
-                                                    </button>
-                                                </div>
-                                                <div class="profile__tab-row deal__about-row">
-                                                    <div class="profile__tab-content deal__about-content">Комиссия: <span>30$</span></div>
-                                                    <div class="profile__tab-content deal__about-content">Комиссию платит: <span>Покупатель</span></div>
-                                                </div>
-                                                <div class="profile__tab-row deal__about-row">
-                                                    <div class="profile__tab-content deal__about-content">Покупатель: <span>antoshkina1991@mail.ru</span></div>
-                                                    <div class="profile__tab-content deal__about-content">Продавец: <span></span></div>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div class="profile__tab-options">
-                                        <div class="profile__options-inner">
-                                            <div class="profile__options-items">
-                                                <a class="profile__options-item underline question" data-fancybox data-src="#deal__cancel" href="javascript:;">Отменить сделку</a>
-                                                <a class="profile__options-item underline question" data-fancybox data-src="#dispute__modal" href="javascript:;">Оспорить сделку</a>
-                                                <a class="profile__options-item underline question" data-fancybox data-src="#deal__change" href="javascript:;">Изменить условия</a>
-                                            </div>
-                                            <a class="profile__options-btn button"  data-fancybox data-src="#confirmation" href="javascript:;">Подтвердить выполнение</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <button class="button payment__btn" type="submit">
+                                        Оплатить
+                                    </button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -347,149 +216,8 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div>  
     </div>
-    
-    <div id="confirmation" class="confirmation options__modal" style="display: none;"> 
-        <h2 class="confirmation__title options__modal-title">
-            Подтверждение выполнения
-        </h2>
-        <p class="confirmation__text">
-            В том случае, если все условия соблюдены и у сторон нет претензий, то после подтверждения деньги будут перечислены на счет продавца.
-        </p>
-        <button class="confirmation-btn button" type="submit ">
-            Отправить 
-        </button>
-    </div>
-
-    <div id="confirmation-success" class="confirmation-success" style="display: none;">
-        <form>
-            <h2 class="confirmation-success__title options__modal-title">
-                Поздравляем с успешным завершением сделки!
-            </h2>
-            <div class="confirmation-success__reviews">Оставьте отзыв о сотрудничестве:</div>
-            <div class="confirmation-success__content">
-                <span>Контактность:</span>
-                <div id="confirmation-success__rate" class="confirmation-success__rate"></div>
-            </div>
-            <div class="confirmation-success__content">
-                <span>Качество товара/услуг:</span>
-                <div id="confirmation-success__rate" class="confirmation-success__rate"></div>
-            </div>
-            <div class="confirmation-success__content">
-                <span>Соблюдение сроков:</span>
-                <div id="confirmation-success__rate" class="confirmation-success__rate"></div>
-            </div>
-            <div class="confirmation-success__content">
-                <span>Профессионализм:</span>
-                <div id="confirmation-success__rate" class="confirmation-success__rate"></div>
-            </div>
-            <div class="confirmation-success__content">
-                <span>Стоимость:</span>
-                <div id="confirmation-success__rate" class="confirmation-success__rate"></div>
-            </div>
-            <textarea class="confirmation-success__textarea input" required placeholder="Ваш отзыв"></textarea>
-            <div class="textarea-suptitle">
-                Осталось 1 000 символов 
-            </div>
-            <button class="confirmation-success__btn button" type="submit">
-                Отправить
-            </button>
-        </form>
-    </div>
-
-    <div id="deal__cancel" class="deal__cancel options__modal" style="display: none;">
-        <div class="deal__cancel-inner">
-            <h2 class="deal__cancel-title options__modal-title">
-                Вы уверены, что хотите отменить сделку?
-            </h2>
-            <div class="deal__cancel-text">
-                <p>Вашему партнеру будет отправлено уведомление.В случае его согласия сделка будет остановлена.</p>
-                <p>В случае несогласия (или игнорирования) сделка останется активна.</p>
-                <p>Зарезервированная сумма будет перечислена на счет покупателя.</p>
-                <p>Комиссия будет удержана с покупателя.</p>
-            </div>
-            <div class="deal__modal-option">
-                <button class="deal__cancel-back transparent-btn" data-fancybox-close>
-                    Назад
-                </button>
-                <a href="#" class="deal__cancel-next button">
-                    Продолжить
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div id="deal__change" class="deal__change options__modal" style="display: none;">
-        <div class="deal__change-form">
-            <form>
-                <h2 class="deal__change-title options__modal-title">
-                    Вы собираетесь изменить условия сделки
-                </h2>
-                <div class="deal__change-text">
-                    <p>Вашему партнеру будет отправлено уведомление. </p>
-                    <p>В случае его согласия условия сделки будут изменены.</p>
-                    <p>В случае несогласия (или игнорирования) условия сделки останутся прежними.</p>
-                </div>
-                <div class="deal__change-form__title">
-                    Введите новые условия:
-                </div>
-                <div class="deal__change-box">
-                    <div class="deal__change-row">
-                        <div class="deal__change-content question">Сумма сделки</div>
-                        <input class="input deal__change-input" type="text" placeholder="1 000$" required>
-                    </div>
-                    <div class="deal__change-row">
-                        <div class="deal__change-content question">Срок окончания сделки</div>
-                        <input class="input deal__change-input" type="date" name="calendar" required>
-                    </div>
-                </div>
-                <div class="deal__modal-option">
-                    <button class="deal__change-back transparent-btn" data-fancybox-close>
-                        Назад
-                    </button>
-                    <button class="deal__change-next button" type="submit">
-                        Отправить предложение
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-    <div id="dispute__modal" class="dispute__modal options__modal" style="display: none;">
-        <div class="dispute__modal-form">
-            <form>
-                <h2 class="options__modal-title dispute__modal-title">
-                    Вы собираетесь оспорить сделку
-                </h2>
-                <div class="dispute__modal-text">
-                    <p>Если вы попали сюда, значит что-то пошло не так, нам очень жаль.</p>
-                    <p>Пожалуйста, опишите проблему как можно подробнее, приложите фото (если имеются), подтверждающие недобросовестное выполнение условий сделки продавцом.</p>
-                    <p>После изучения предоставленных материалов мы сделаем все возможное, чтобы разрешить возникшую ситуацию.</p>
-                </div>
-                <textarea class="dispute__modal-textarea input" placeholder="Опишите проблему" required></textarea>
-                <div class="dispute__modal-suptitle textarea-suptitle">
-                    Осталось 1 000 символов
-                </div>
-                <div class="input__inner-file file dispute__modal-box">
-                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.61326 19.7334C3.51074 19.7335 2.45237 19.3001 1.6666 18.5267L1.57993 18.4401C1.18513 18.0548 0.871439 17.5945 0.657332 17.0861C0.443226 16.5777 0.333039 16.0317 0.333264 15.48C0.331869 14.8829 0.449003 14.2913 0.677877 13.7398C0.906752 13.1882 1.24282 12.6875 1.6666 12.2667L11.9999 2.04672C13.0498 0.953561 14.4871 0.316551 16.0022 0.272907C17.5173 0.229264 18.9888 0.782479 20.0999 1.81338C20.601 2.31325 20.9976 2.90786 21.2666 3.56255C21.5356 4.21725 21.6716 4.91894 21.6666 5.62672C21.6607 6.41719 21.4986 7.19869 21.1897 7.92633C20.8808 8.65397 20.4311 9.31339 19.8666 9.86672L10.5799 19.0667C10.5222 19.1444 10.4483 19.2085 10.3632 19.2547C10.2782 19.3009 10.1842 19.3281 10.0876 19.3343C9.99105 19.3405 9.8943 19.3256 9.80407 19.2906C9.71385 19.2557 9.63231 19.2015 9.56513 19.1319C9.49795 19.0622 9.44673 18.9788 9.41503 18.8874C9.38333 18.796 9.37191 18.6987 9.38156 18.6025C9.39122 18.5062 9.42172 18.4132 9.47094 18.3299C9.52016 18.2466 9.58692 18.175 9.6666 18.1201L18.9266 8.92005C19.3664 8.49077 19.717 7.97885 19.9584 7.41369C20.1998 6.84852 20.3272 6.24124 20.3333 5.62672C20.3381 5.09488 20.2368 4.56742 20.0353 4.0752C19.8339 3.58298 19.5363 3.13587 19.1599 2.76005C18.2985 1.97529 17.1634 1.56006 15.9989 1.6037C14.8344 1.64734 13.7336 2.14635 12.9333 2.99338L2.63326 13.2134C2.32974 13.5081 2.08794 13.8603 1.92197 14.2495C1.756 14.6387 1.66919 15.057 1.6666 15.48C1.66517 15.8515 1.73751 16.2196 1.87942 16.5629C2.02132 16.9062 2.22997 17.218 2.49326 17.48L2.57993 17.5667C3.17643 18.116 3.96477 18.4091 4.77523 18.3829C5.58569 18.3567 6.35346 18.0134 6.91326 17.4267L15.8133 8.62672C15.9816 8.45654 16.1143 8.2545 16.2035 8.03243C16.2928 7.81036 16.3369 7.57271 16.3333 7.33338C16.3347 7.12552 16.2948 6.91944 16.2158 6.72715C16.1369 6.53486 16.0204 6.36022 15.8733 6.21338C15.5366 5.90466 15.092 5.7407 14.6355 5.75692C14.179 5.77313 13.7472 5.96821 13.4333 6.30005L7.29993 12.38C7.17439 12.5047 7.00448 12.5744 6.82757 12.5738C6.65066 12.5731 6.48125 12.5023 6.3566 12.3767C6.23195 12.2512 6.16227 12.0813 6.16289 11.9044C6.16352 11.7275 6.23439 11.558 6.35993 11.4334L12.5199 5.33338C13.0846 4.75493 13.854 4.42165 14.6622 4.40543C15.4704 4.38922 16.2525 4.69138 16.8399 5.24672C17.1101 5.52171 17.3224 5.84803 17.4644 6.20642C17.6064 6.5648 17.6751 6.94799 17.6666 7.33338C17.6659 7.7484 17.5824 8.1591 17.421 8.54144C17.2596 8.92378 17.0235 9.27007 16.7266 9.56005L7.85326 18.3867C6.99319 19.2454 5.82862 19.7295 4.61326 19.7334V19.7334Z" fill="#817F7F"/></svg>                        
-                    <input class="dispute__modal-file input-file" type="file" data-placeholder="Прикрепить файлы" data-browse="Максимальный размер 5Мb">
-                </div>
-               
-                <div class="deal__modal-option">
-                    <button class="deal__change-back transparent-btn" data-fancybox-close>
-                        Назад
-                    </button>
-                    <button class="deal__change-next button" type="submit">
-                        Отправить предложение
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -500,5 +228,4 @@
     <script src="libs/rateyo/jquery.rateyo.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
