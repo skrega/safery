@@ -1394,5 +1394,39 @@
 }
 //paymetn end
 
+//support start
+.support{
+    position: relative;
+    &__form{
+        margin-top: 149px;
+        margin-left: 105px;
+    }
+    &__text{
+        margin-top: 10px;
+        max-width: 590px;
+    }
+    &__form-inner{
+        margin-top: 15px;
+        max-width: 468px;
+        margin-bottom: 70px;
+    }
+    &__input{
+        width: 100%;
+        margin-top: 35px;
+    }
+    &__bg{
+        position: absolute;
+        right: -150px;
+        bottom: -233px;
+        z-index: 1;
+    }
+}
+.footer.support{
+    .footer__disign{
+        margin-right: 190px;
+    }
+}
+//support end
+
 
 @import "media";
