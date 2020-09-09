@@ -19,10 +19,34 @@ $(function(){
         ratedFill: "#FABB6F",
     });
     
-    $('.profile__tabs .tab, .settings__tabs, .tab').on('click', function (event) {
+    $("#profile-partner__rate").rateYo({
+        rating: 4,
+        starWidth: "15px",
+        normalFill: "#C4C4C4",
+        ratedFill: "#FABB6F",
+        readOnly: true
+    });
+    $(".reviews__item-rate").rateYo({
+        rating: 4,
+        starWidth: "15px",
+        normalFill: "#C4C4C4",
+        ratedFill: "#FABB6F",
+        readOnly: true
+    });
+   
+    $(".profile-partner__rate").rateYo({
+        rating: 4,
+        starWidth: "23px",
+        normalFill: "#C4C4C4",
+        ratedFill: "#FABB6F",
+        readOnly: true
+    });
+    
+
+    $('.profile__tabs .tab, .profile-partner__tab, .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
-        $('.profile__tabs, .settings__tabs').find('.tab-item').removeClass('active-tab').hide();
-        $('.profile__tabs .tabs, .settings__tabs, .tabs').find('.tab').removeClass('active');
+        $('.profile__tabs, .profile-partner__tabs').find('.tab-item').removeClass('active-tab').hide();
+        $('.profile__tabs .tabs, .profile-partner__tab, .tabs').find('.tab').removeClass('active');
         $(this).addClass('active');
         $('#' + id).addClass('active-tab').fadeIn();
         return false;

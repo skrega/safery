@@ -1616,9 +1616,141 @@
         width: 35px;
         height: 35px;
     }
-  
 }
 //settings end
+
+//profile-partner start
+.profile-partner{
+    padding-bottom: 60px;
+    &__items{
+        display: none;
+        &.active-tab{
+            display: flex;
+        }
+    }
+    &-tabs{
+        margin-bottom: 35px;
+        margin-top: 50px;
+        margin-left: 80px;
+    }
+    &__tab{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: #C4C4C4;
+        text-align: center;
+       
+        cursor: pointer;
+        &.active{
+            color: #6A3492;
+        }
+    }
+    &__tab:nth-child(1){
+        position: relative;
+        padding-right: 11px;
+        &::before{
+            position: absolute;
+            content: "/";
+            right: -2px;
+            top: 1px;
+            color: #C4C4C4;
+        }
+       
+
+    }
+    &__inner {
+        min-height: 730px;
+    }
+    &__head{
+        padding: 40px 40px 25px;
+        border-bottom: 0.5px solid #C4C4C4;
+    }
+    &__user{
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+        margin-right: 40px;
+    }
+    &__name{
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    &__about{
+        padding: 25px 40px 25px; 
+        border-bottom: 0.5px solid #C4C4C4;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    &__suptitle{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    &__row{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__statistics .profile-partner__row{
+        max-width: 221px;
+    }
+    &__content{
+        color: #646464;
+    }
+    &__content,
+    &__value{
+        font-weight: 400;
+    }
+    .profile-partner-rate{
+        .profile-partner__row{
+            width: 408px;
+        }
+        .jq-ry-container {
+            width: 176px !important;
+        }
+        .jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group {
+            svg + svg{
+                margin-left: 15px !important;
+            }
+        }
+    }
+}
+.reviews__item{
+    padding-bottom: 60px;
+    margin-left: 30px;
+    width: 100%;
+    &-inner{
+        padding: 33px 40px 20px 33px;
+        border-bottom: 0.5px solid #C4C4C4;
+    }
+    &-user{
+        display: flex;
+        align-items: center;
+    }  
+    &-img{
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+    &-name{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+    }
+    &-text{
+        margin-top: 20px;
+    }
+    &-date{
+        text-align: right;
+        font-size: 13px;
+        line-height: 15px;
+        color: #646464;
+    }
+}
+//profile-partner end
 
 
 @import "media";
