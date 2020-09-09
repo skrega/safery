@@ -1427,6 +1427,47 @@
     }
 }
 //support end
+//history start
+.history{
+    &__table{
+        padding: 50px 35px 35px;
+       
+    }
+    &__table-items{
+        border-radius: 7px;
+        border: 0.5px solid #C4C4C4;
+    }
+    &__table-item{
+        display: flex;
+    }
+    &__table-item:nth-child(even){
+        padding: 14px 10px 15px;
+        background-color: #F3F7F7;
+        border-top: 0.5px solid #C4C4C4;
+        border-bottom: 0.5px solid #C4C4C4;
+    }
+    &__table-item:last-child{
+        border-bottom: none;
+    }
+    &__table-title{
+        font-size: 15px;
+        line-height: 18px;
+        width: 366px;
+        padding: 9px 10px 10px;
+        & + .history__table-title{
+            border-left:  0.5px solid #C4C4C4;
+            padding-left: 25px;
+        }
+    }
+    &__table-content{
+        font-weight: 400;
+        width: 366px;
+        & + .history__table-content{
+            padding-left: 20px;
+        }
+    }
+}
+//history end
 
 
 @import "media";
