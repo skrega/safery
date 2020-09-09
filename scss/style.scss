@@ -1469,5 +1469,156 @@
 }
 //history end
 
+//settings start
+.settings{
+    .jq-selectbox__trigger-arrow {
+        position: absolute;
+        top: 18px;
+        right: 12px;
+        width: 0;
+        height: 0;
+        border-top: 12px solid #9A9D9D;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    } 
+    &__item:nth-child(1){
+        width: 80%;
+    }
+    &__finance-inner{
+        padding: 20px 35px 35px;
+    }
+    &__finance-content{
+        color: #646464;
+        width: 146px;
+        text-align: right;
+        margin-right: 50px;
+    }
+    &__finance-content:nth-child(2){
+        margin-bottom: 25px;
+    }
+    &__finance-row{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    &__finance-card{
+        max-width: 953px;
+        width: 100%;
+        position: relative;
+    }
+    &__finance-input{
+        width: 100%;
+        padding-right: 30px;
+    }
+    &__finance-select{
+        width: 100%;
+        .jq-selectbox__trigger{
+            right: 30px;
+        }
+    }
+    &__finance-btn{
+        position: absolute;
+        right: 7px;
+        top: 13px;
+        background-color: transparent;
+        padding: 0;
+        z-index: 10;
+        &:hover{
+            svg path{
+                fill: #7D4F9E;
+            }
+        }
+    }
+    &__finance-add{
+        font-weight: 300;
+        padding: 0;
+        display: block;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+    &__profile{
+        min-height: 625px;
+    }
+    &__profile-head{
+        padding-top: 35px;
+    }
+    &__profile-title{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-bottom: 0.5px solid #C4C4C4;
+        padding: 0 20px 19px;
+       
+    }
+    &__profile-inner{
+        padding: 30px 15px 30px;
+    }
+    &__profile-input{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    &__profile-password{
+        position: relative;
+    }
+    &__profile-btn{
+        position: absolute;
+        right: 0;
+        top: 10px;
+        background-color: transparent;
+    }
+    &__items-btn{
+        margin-top: 50px;
+        display: block;
+        margin-left: auto;
+    }
+    .profile__user-avatar{
+        width: 102px;
+        height: 102px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .jq-file {
+        width: 50px;
+        height: 50px;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: all .4s;
+        transition: all .4s;
+        position: absolute;
+        text-align: center;
+        bottom: -20px;
+        right: -14px;
+    }
+    .jq-file__browse {
+        position: inherit;
+        top: 0;
+        right: 12px;
+        padding: 0;
+        border-left: none;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #F6F6F6;
+        background-blend-mode: soft-light, normal;
+        box-shadow: -2px -2px 6px rgba(250, 251, 255, 0.6), 5px 5px 10px #A6ABBD;
+        font: inherit;
+        color: #646464;
+        text-shadow: none;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 32px;
+        width: 35px;
+        height: 35px;
+    }
+  
+}
+//settings end
+
 
 @import "media";
