@@ -19,14 +19,14 @@ $(function(){
         ratedFill: "#FABB6F",
     });
     
-    $("#profile-partner__rate").rateYo({
-        rating: 4,
-        starWidth: "15px",
-        normalFill: "#C4C4C4",
-        ratedFill: "#FABB6F",
-        readOnly: true
-    });
-    $(".reviews__item-rate").rateYo({
+    // $("#profile-partner__rate").rateYo({
+    //     rating: 4,
+    //     starWidth: "15px",
+    //     normalFill: "#C4C4C4",
+    //     ratedFill: "#FABB6F",
+    //     readOnly: true
+    // });
+    $(".rate-star").rateYo({
         rating: 4,
         starWidth: "15px",
         normalFill: "#C4C4C4",
