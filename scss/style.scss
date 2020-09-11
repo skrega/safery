@@ -1745,6 +1745,75 @@
     }
 }
 //profile-partner end
+//argee start
+.argee{
+    &__inner{
+        padding: 100px 0;
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    &__list{
+        margin: 40px 0 100px;
+    }
+    &__item{
+        position: relative;
+        padding-left: 70px;
+        margin-top: 35px;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background-color: #F0972C;
+            left: 0;
+            top: 7px;
+        }
+    }
+    &__about{
+        background-color: #EEECF0;
+        border: 0.5px solid #C4C4C4;
+        border-radius: 7px;
+    }
+    &__about-title{
+        font-weight: 500;
+        padding: 20px 20px 10px;
+    }
+    &__about-box{
+        padding: 22px 22px 23px 20px;
+        border-bottom: 0.5px solid #C4C4C4;
+        border-top: 0.5px solid #C4C4C4;
+    }
+    &__about-notice{
+        background-color: #DCDCDC;
+        padding: 15px 15px 15px 55px;
+        max-width: 610px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(../images/lock.svg);
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            left: 20px;
+            top: 19px;
+        }
+    }
+    &__about-info{
+        padding: 20px;
+        color: #646464;
+        span{
+            font-weight: 500;
+            margin-left: 6px;
+            color: #000;
+        }
+    }
+}
+
+//argee end
 
 
 @import "media";
