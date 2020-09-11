@@ -1812,8 +1812,31 @@
         }
     }
 }
-
 //argee end
+
+//agree-success start
+.agree-success{
+    background-repeat: no-repeat;
+    background-size: 476px;
+    height: 570px;
+    background-position: center;
+    &__inner{
+        padding-top: 120px;
+        text-align: center;
+        
+    }
+    &__img{
+        
+    }
+    &__text{
+        margin: 50px 0 70px;
+    }
+    &__link{
+        display: block;
+        margin: 0 auto;
+    }
+}
+//agree-success end
 
 
 @import "media";
