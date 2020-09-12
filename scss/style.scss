@@ -1814,6 +1814,37 @@
 }
 //argee end
 
+//agree-condition start
+.agree-condition{
+    &__info{
+        background: #F2F2F2;
+        box-shadow: inset 2px 0px 6px rgba(100, 100, 100, 0.17);
+        padding: 25px 34px;
+        margin-bottom: 50px;
+    }
+    &__title{
+        font-weight: 400;
+    }
+    &__text{
+        margin-top: 33px;
+        font-size: 16px;
+        line-height: 29px;
+        span{
+            font-weight: 500;
+            color: #7D4F9E;
+
+        }
+    }
+    &__wrapper{
+        padding: 0 35px 27px;
+    }
+    &__buttons{
+        margin-top: 44px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+//agree-condition end
 //agree-success start
 .agree-success{
     background-repeat: no-repeat;
@@ -1823,10 +1854,6 @@
     &__inner{
         padding-top: 120px;
         text-align: center;
-        
-    }
-    &__img{
-        
     }
     &__text{
         margin: 50px 0 70px;
