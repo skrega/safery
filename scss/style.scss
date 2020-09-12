@@ -3,7 +3,7 @@
 @import "fonts";
 @import "global";
 
-
+//start index
 //start header
 .header{
     &__inner{
@@ -550,14 +550,16 @@
     }
 }
 //end footer
+//end index
 
 //page profile start
 .profile{
     display: flex;
+    height: 100vh;
     &__aside{
         box-shadow: 7px 4px 7px rgba(0, 0, 0, 0.17);
         width: 280px;
-        height: 952px;
+        max-height: 952px;
     }
     &__logo{
         text-align: center;
@@ -674,7 +676,16 @@
         padding: 18px 10px 13px 25px;
         border-bottom: 0.5px solid #E5E5E5;
     }
-   &__notification-count{
+    &__notification{
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 400;
+        background-color: #F0972C;
+        border-radius: 50%;
+        padding: 2px 7px;
+        margin-left: 5px;
+    }
+    &__notification-count{
         font-size: 13px;
         line-height: 16px;
         font-weight: 400;
@@ -1075,7 +1086,7 @@
             width: 45px;
             height: 45px;
             bottom: -70px;
-            left: 40%
+            left: 88px;
         }
         &::after{
             position: absolute;
@@ -1173,6 +1184,9 @@
         display: flex;
         justify-content: space-between;
         margin-top: 70px;
+    }
+    .profile__output-sum{
+        margin-bottom: 0;
     }
    
 }
@@ -1415,7 +1429,7 @@
     &__bg{
         position: absolute;
         right: -150px;
-        bottom: -233px;
+        bottom: -147px;
         z-index: 1;
     }
 }
@@ -1433,10 +1447,12 @@
     }
     &__table-items{
         border-radius: 7px;
-        border: 0.5px solid #C4C4C4;
+        border-right: 0.5px solid #C4C4C4;
+        border-left: 0.5px solid #C4C4C4;
     }
     &__table-item{
         display: flex;
+        background-color: #fff;
     }
     &__table-item:nth-child(even){
         padding: 14px 10px 15px;
@@ -1446,6 +1462,15 @@
     }
     &__table-item:last-child{
         border-bottom: none;
+    }
+    &__table-item:nth-child(1){
+        border-radius: 7px;
+        border-top: 0.5px solid #C4C4C4;
+    }
+    &__table-item:last-child{
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-bottom: 0.5px solid #C4C4C4;
     }
     &__table-title{
         font-size: 15px;
@@ -1570,6 +1595,9 @@
         top: 10px;
         background-color: transparent;
     }
+    &__items-btn{
+        margin-bottom: 30px;
+    }
     .profile__user-avatar{
         width: 102px;
         height: 102px;
@@ -1608,6 +1636,11 @@
         line-height: 32px;
         width: 35px;
         height: 35px;
+    }
+    .jq-file:hover .jq-file__browse,
+    .jq-file:hover .jq-file__name{
+        background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #F6F6F6;
+        color: #7D4F9E;
     }
 }
 //settings end
@@ -1820,7 +1853,7 @@
         background: #F2F2F2;
         box-shadow: inset 2px 0px 6px rgba(100, 100, 100, 0.17);
         padding: 25px 34px;
-        margin-bottom: 50px;
+        margin: 50px 0;
     }
     &__title{
         font-weight: 400;
@@ -1847,20 +1880,31 @@
 //agree-condition end
 //agree-success start
 .agree-success{
-    background-repeat: no-repeat;
-    background-size: 476px;
-    height: 570px;
-    background-position: center;
     &__inner{
-        padding-top: 120px;
+        padding-top: 70px;
+        // padding-bottom: 263px;
         text-align: center;
+        position: relative;
     }
     &__text{
-        margin: 50px 0 70px;
+        margin: 50px auto 70px;
+        max-width: 1169px;
     }
     &__link{
         display: block;
         margin: 0 auto;
+    }
+    &__img{
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width: 472px;
+        min-height: 543px;
+        position: absolute;
+        top: -30px;
+        left: 0;
+        right: 0;
+        background-position: center;
+        z-index: -1;
     }
 }
 //agree-success end

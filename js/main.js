@@ -14,7 +14,7 @@ $(function(){
 
     $(".confirmation-success__rate").rateYo({
         rating: 2,
-        starWidth: "15px",
+        starWidth: "23px",
         normalFill: "#C4C4C4",
         ratedFill: "#FABB6F",
     });

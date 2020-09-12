@@ -165,7 +165,7 @@
                                             <div class="profile__tab-title deal__about-title">Разработка сайта</div>
                                             <div class="profile__tab-status">Выполняется</div>
                                         </div>
-                                        <div class="profile__tab-info deal__about-info">
+                                        <div class="profile__tab-info">
                                             <div class="profile__tab-column profile__tab-descr deal__about-descr">
                                                 <p class="profile__tab-text deal__about-text">
                                                     Необходимо разработать дизайн интернет-магазина по продаже электроники. Примерная структура страниц есть, но требует доработки. Все необходимые материалы будут предоставлены заказчиком в течение суток. исполнитель обязуется выполнить работу в срок и передать макет заказчику. в приложении структура, предоставленная заказчиком.
@@ -187,8 +187,8 @@
                                                 </div>
                                             </div>
                                             <div class="profile__tab-column deal__about-column">
-                                                <div class="profile__tab-inner deal__about-inner">
-                                                    <div class="profile__tab-box deal__about-box">
+                                                <div class="profile__tab-inner">
+                                                    <div class="profile__tab-box">
                                                         <div class="tab-item__title suptitle deal__about-content">
                                                             Сумма сделки
                                                         </div>
@@ -205,7 +205,7 @@
                                                             <span>(осталось 70 дней, 3 часа)</span>
                                                         </div>
                                                     </div>
-                                                    <button class="grey__btn tab-item__btn details-btn deal__about-btn">
+                                                    <button class="grey__btn tab-item__btn details-btn">
                                                         Детали
                                                     </button>
                                                 </div>
@@ -223,11 +223,11 @@
                                     <div class="profile__tab-options">
                                         <div class="profile__options-inner">
                                             <div class="profile__options-items">
-                                                <a class="profile__options-item underline" href="#">Отменить сделку</a>
-                                                <a class="profile__options-item underline" href="#">Оспорить сделку</a>
-                                                <a class="profile__options-item underline" href="#">Изменить условия</a>
+                                                <a class="profile__options-item underline question" data-fancybox data-src="#deal__cancel" href="javascript:;">Отменить сделку</a>
+                                                <a class="profile__options-item underline question" data-fancybox data-src="#dispute__modal" href="javascript:;">Оспорить сделку</a>
+                                                <a class="profile__options-item underline question" data-fancybox data-src="#deal__change" href="javascript:;">Изменить условия</a>
                                             </div>
-                                            <a class="profile__options-btn button" href="#">Подтвердить выполнение</a>
+                                            <a class="profile__options-btn button"  data-fancybox data-src="#confirmation" href="javascript:;">Подтвердить выполнение</a>
                                         </div>
                                     </div>
                                 </div>
@@ -357,9 +357,9 @@
         <p class="confirmation__text">
             В том случае, если все условия соблюдены и у сторон нет претензий, то после подтверждения деньги будут перечислены на счет продавца.
         </p>
-        <button class="confirmation-btn button" type="submit ">
+        <a class="confirmation-btn button" data-fancybox data-src="#confirmation-success" href="javascript:;">
             Отправить 
-        </button>
+        </a>
     </div>
 
     <div id="confirmation-success" class="confirmation-success" style="display: none;">
