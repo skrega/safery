@@ -804,10 +804,10 @@
             position: absolute;
             left: 0;
             top: 0;
-            bottom: 0;
+            bottom: 0;  
             right: 196px;
             font-size: 40px;
-            line-height: 47px;
+            line-height: 54px;
             border-radius: 7px 0px 0px 7px;
         }
     }
@@ -827,11 +827,11 @@
         background-color: #DCDCDC;
         width: 350px;
         display: flex;
-        
         align-items: center;
     }
     &__tab-btn{
         background-color: #DCDCDC;
+        font-family: 'Roboto-Medium', sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 21px;

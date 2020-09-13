@@ -39,7 +39,7 @@ body{
     color: #000000;
     font-size: 18px; 
     line-height: 29px;
-    font-family: 'Roboto-Light', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
 }
@@ -57,7 +57,7 @@ h2{
 }
 
 h3{
-    font-family: 'Roboto-Light', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
@@ -714,7 +714,7 @@ textarea{
         color: #646464;
         margin-bottom: 10px;
         span{
-            @extend %roboto-m;
+            font-weight: 500;
             color: #000;
         }
     }
