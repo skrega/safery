@@ -88,6 +88,7 @@ textarea{
     flex-direction: column;
     min-height: 100%;
     width: 100%;
+    padding: 100px 0 0 280px;
 }
 
 .content {
@@ -104,9 +105,9 @@ textarea{
     margin: 0 auto;
 }
 .profile__container{
-    max-width: 1566px;
+    max-width: 1606px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 .inner{
@@ -183,6 +184,10 @@ textarea{
     color: #646464;
     text-decoration: underline;
     background-color: transparent;
+    transition: all .4s;
+    &:hover{
+        color: #7D4F9E;
+    }
 }
 .question{
     position: relative;
@@ -670,17 +675,16 @@ textarea{
     }
     &-images{
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
+        max-width: 785px;
     }
     &-tumb{
-        width: 140px;
-        height: 120px;
+        width: 7.45vw;
+        height: 6.4vw;
         border: 0.5px solid #C4C4C4;
         border-radius: 7px;
         overflow: hidden;
-        & + .deal__about-tumb{
-            margin-left: 20px;
-        }
     }
     &-inner{
         align-items: inherit;
@@ -697,7 +701,6 @@ textarea{
     }
     &-content{
         color: #646464;
-        font-weight: 400;
         margin-bottom: 10px;
         span{
             @extend %roboto-m;

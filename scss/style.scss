@@ -554,12 +554,16 @@
 
 //page profile start
 .profile{
-    display: flex;
     height: 100vh;
+    overflow-x: hidden;
     &__aside{
         box-shadow: 7px 4px 7px rgba(0, 0, 0, 0.17);
         width: 280px;
-        max-height: 952px;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        z-index: 10;
+        background-color: #F6F6F6;
     }
     &__logo{
         text-align: center;
@@ -623,6 +627,12 @@
     &__navigation{
         background-color: rgba(214, 214, 214, 0.33);
         padding: 10px 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        left: 14.7%;
+        z-index: 9;
     }
     &__navigation-box{
         position: relative;
@@ -734,8 +744,11 @@
     .language__select .jq-selectbox::before{
         top: -4px;
     }
+    .jq-selectbox__dropdown{
+        left: 43px;
+    }
     &__balance{
-        margin: 50px 0 50px ;
+        margin: 0px 0 50px;
     }
     &__suptitle{
         font-size: 18px;
@@ -800,7 +813,7 @@
     }
 
     &__tabs{
-        margin-bottom: 20px;
+        margin-bottom: 4vw;
     }
 
     &__tabs-inner{
@@ -921,9 +934,6 @@
             line-height: 21px;
         }
     }
-    .tab-item__btn{
-       margin-right: 20px; 
-    }
     &__tab-descr{
         display: none;
     }
@@ -942,7 +952,7 @@
     }
     &__tab-options{
         display: none;
-        margin-top: 50px;
+        margin-top: 2.5vw;
     }
     &__tab-options.active{
         display: block;
@@ -955,19 +965,22 @@
     &__options-item{
         padding-right: 30px;
     }
+    &__options-item:hover::before{
+        border-color: #7D4F9E;
+    }
     .profile__options-item + .profile__options-item {
         margin-left: 35px;
     }
 }
 .profile__tab-info.active{
-    .tab-item__btn{
+    .profile__tab-box:last-child{
         display: none;
     }
     .profile__tab-inner{
         border-bottom: 0.5px solid #C4C4C4;
     }
     .profile__tab-box{
-        width: 300px;
+        width: 15.5vw;
     }
     .profile__tab-details span{
         display: none;
@@ -1361,6 +1374,7 @@
 
 //paymetn start
 .payment{
+    padding-bottom: 70px;
     &__form{
         padding: 70px 35px 35px;
     }
@@ -1408,10 +1422,10 @@
 
 //support start
 .support{
-    position: relative;
     &__form{
-        margin-top: 149px;
+        margin-top: 100px;
         margin-left: 105px;
+        margin-bottom: 50px;
     }
     &__text{
         margin-top: 10px;
@@ -1428,14 +1442,15 @@
     }
     &__bg{
         position: absolute;
-        right: -150px;
-        bottom: -147px;
+        right: -140px;
+        bottom: 0;
         z-index: 1;
     }
 }
 .footer.support{
+    position: relative;
     .footer__disign{
-        margin-right: 190px;
+        margin-right: 220px;
     }
 }
 //support end
@@ -1443,7 +1458,6 @@
 .history{
     &__table{
         padding: 50px 35px 35px;
-       
     }
     &__table-items{
         border-radius: 7px;
@@ -1485,6 +1499,7 @@
     &__table-content{
         font-weight: 400;
         width: 366px;
+        line-height: 21px;
         & + .history__table-content{
             padding-left: 20px;
         }
@@ -1656,7 +1671,6 @@
     }
     &-tabs{
         margin-bottom: 35px;
-        margin-top: 50px;
         margin-left: 80px;
     }
     &__tab{
@@ -1665,7 +1679,6 @@
         font-weight: 700;
         color: #C4C4C4;
         text-align: center;
-       
         cursor: pointer;
         &.active{
             color: #6A3492;
