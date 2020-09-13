@@ -1006,6 +1006,8 @@
         font-weight: 400;
         margin-right: 45px;
         display: inline-block;
+        width: 200px;
+        text-align: right;
     }
     &-commission{
         font-family: 'Roboto-Light', sans-serif;
@@ -1021,8 +1023,6 @@
         display: flex;
         align-items: center;
         margin-bottom: 35px;
-        max-width: 1050px;
-        justify-content: flex-end;
     }
     &-input{
         width: 294px;
@@ -1339,8 +1339,7 @@
         color: #646464;
     }
     &__input{
-        max-width: 570px;
-        width: 100%;
+        width: 29.7vw;
         margin: 0 50px;
         color: #000000;
         font-weight: 400;
@@ -1354,7 +1353,7 @@
 //creating-third end
 .deal__about.extended{
     .deal__about-box{
-        width: 320px;
+        width: 17vw;
     }
 }
 .deal__create-agreed{
@@ -1896,13 +1895,13 @@
 //agree-success start
 .agree-success{
     &__inner{
-        padding-top: 70px;
+        padding-top: 4vw;
         // padding-bottom: 263px;
         text-align: center;
         position: relative;
     }
     &__text{
-        margin: 50px auto 70px;
+        margin: 2.5vw auto 4vw;
         max-width: 1169px;
     }
     &__link{
@@ -1912,10 +1911,10 @@
     &__img{
         background-size: contain;
         background-repeat: no-repeat;
-        min-width: 472px;
-        min-height: 543px;
+        min-width: 23vw;
+        min-height: 29vw;
         position: absolute;
-        top: -30px;
+        top: 0px;
         left: 0;
         right: 0;
         background-position: center;

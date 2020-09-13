@@ -22,4 +22,22 @@
     .deal__about-tumb{
         width: 7vw;
     }
+    .deal__about.extended .deal__about-box {
+        width: 15vw;
+    }
+    .deal__step-first{
+        .profile__output-commission{
+            width: 230px;
+        }
+        .profile__output-input {
+            width: 234px;
+        }
+    }
+
+    .agree-success__inner{
+        padding-top: 0;
+    }
+    .agree-success__img{
+        top: -60px;
+    }
 }
