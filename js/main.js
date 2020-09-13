@@ -13,7 +13,7 @@ $(function(){
     });
 
     $(".confirmation-success__rate").rateYo({
-        rating: 2,
+        rating: 5,
         starWidth: "23px",
         normalFill: "#C4C4C4",
         ratedFill: "#FABB6F",
@@ -27,7 +27,7 @@ $(function(){
     //     readOnly: true
     // });
     $(".rate-star").rateYo({
-        rating: 4,
+        rating: 5,
         starWidth: "15px",
         normalFill: "#C4C4C4",
         ratedFill: "#FABB6F",
@@ -35,7 +35,7 @@ $(function(){
     });
    
     $(".profile-partner__rate").rateYo({
-        rating: 4,
+        rating: 5,
         starWidth: "23px",
         normalFill: "#C4C4C4",
         ratedFill: "#FABB6F",

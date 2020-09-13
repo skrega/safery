@@ -597,6 +597,7 @@ textarea{
 //start confirmation-success
 .confirmation-success{
     max-width: 509px;
+    border-radius: 7px;
     &__reviews{
         font-weight: 400;
         margin-bottom: 20px;
@@ -627,6 +628,9 @@ textarea{
     &__btn{
         display: block;
         margin: 70px auto 0;
+    }
+    .textarea-suptitle{
+        margin-right: 10px;
     }
 }
 //end confirmation-success
@@ -825,10 +829,12 @@ textarea{
     }
 }
 //rate star end
-
+.fancybox-container{
+    backdrop-filter: blur(17px);
+}
 .fancybox-is-open .fancybox-bg{
     background: rgba(43, 5, 71, 0.6);
-    backdrop-filter: blur(17px);
+
 }
 .fancybox-button svg path{
     color: #646464;
