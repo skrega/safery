@@ -1369,7 +1369,6 @@
         margin-left: auto;
     }
 }
-
 //creating-third end
 
 //paymetn start
@@ -1456,6 +1455,9 @@
 //support end
 //history start
 .history{
+    &__inner{
+        margin-bottom: 50px;
+    }
     &__table{
         padding: 50px 35px 35px;
     }

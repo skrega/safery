@@ -506,7 +506,7 @@ textarea{
 }
 //end login__modal
 
-//start deal__cancel
+
 .options__modal{
     background-color: #F5F5F5;
     border-radius: 7px; 
@@ -522,9 +522,13 @@ textarea{
     justify-content: space-between;
     margin-top: 70px;
 }
+//start deal__cancel
 .deal{
     &__cancel-inner{
         padding: 6px 0;
+    }
+    &__cancel-text p + p{
+        margin-top: 5px;
     }
     &__cancel-next{
         display: block;
@@ -674,7 +678,7 @@ textarea{
     &-text{
         font-size: 16px;
         line-height: 29px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         max-width: 870px;
     }
     &-images{
@@ -684,11 +688,14 @@ textarea{
         max-width: 785px;
     }
     &-tumb{
+        margin-top: 10px;
         width: 7.45vw;
         height: 6.4vw;
         border: 0.5px solid #C4C4C4;
         border-radius: 7px;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
     &-inner{
         align-items: inherit;

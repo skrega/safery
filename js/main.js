@@ -52,7 +52,7 @@ $(function(){
         return false;
     });
 
-    $('.profile__navigatin-box').hover(
+    $('.profile__navigation-box').hover(
         function() {
             $(this).find('a').addClass('visible');
         },

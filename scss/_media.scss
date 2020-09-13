@@ -15,4 +15,11 @@
     .support__bg{
         right: -170px;
     }
+    .profile__balance-item:nth-child(1), .profile__balance-item:nth-child(2) {
+        max-width: 366px;
+        width: 100%;
+    }
+    .deal__about-tumb{
+        width: 7vw;
+    }
 }
