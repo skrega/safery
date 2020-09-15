@@ -901,16 +901,16 @@
         padding-left: 32px;
         font-weight: 300;
         position: relative;
-        &::before{
-            position: absolute;
-            content: "";
-            width: 16px;
-            height: 16px;
-            left: 0;
-            top: 6px;
-            border-radius: 50%;
-            background-color: #83FB4A;
-        }
+    }
+    &__tab-active{
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 6px;
+        border-radius: 50%;
+        background-color: #83FB4A;
     }
     &__tab-inner{
         display: flex;

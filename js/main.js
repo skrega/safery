@@ -58,6 +58,10 @@ $(function(){
     $('.details-btn').on('click', function () {
         $('.profile__tab-descr, .profile__tab-info, .profile__tab-options').toggleClass('active');
     });
+    $('.profile__navigation-menu').on('click', function () {
+        $('.profile__aside').toggleClass('active');
+    });
+    
     
     $('.settings__profile-btn').on('click', function () {
         $(this).toggleClass('active');
