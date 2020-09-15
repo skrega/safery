@@ -447,24 +447,21 @@
 //start questions
 .questions{
     padding-bottom: 100px;
-    &__inner{
-        
-    }
-   &__text{
+    &__text{
         color: #4A4A4A;
         line-height: 28px;
         margin: 10px 0 50px;
         max-width: 607px;
-   } 
-   &__form-input{
-       display: block;
-       max-width: 468px;
-       width: 100%;
-       margin-bottom: 35px;
-   }
-   &__form-btn{
-       border: none;
-   }
+    } 
+    &__form-input{
+        display: block;
+        max-width: 468px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    &__form-btn{
+        border: none;
+    }
 }
 //end questions
 
@@ -552,6 +549,12 @@
 //end index
 
 //page profile start
+.logo__mobile{
+    display: none;
+}
+.profile__navigation-menu{
+    display: none;
+}
 .profile{
     height: 100vh;
     overflow-x: hidden;
@@ -722,6 +725,10 @@
     &__navigation-items{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
+    }
+    &__navigation-nav{
+        display: flex;
         align-items: center;
     }
     .icon-warpper:nth-child(1){
@@ -1449,6 +1456,7 @@
     &__text{
         margin-top: 10px;
         max-width: 590px;
+        color: #4A4A4A;
     }
     &__form-inner{
         margin-top: 15px;

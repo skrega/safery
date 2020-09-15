@@ -75,6 +75,15 @@
     .profile-partner__information {
         width: 50%;
     }
+    .profile__aside{
+        width: 230px;
+    }
+    .wrapper{
+        padding-left: 230px;
+    }
+    .profile__tab-box{
+        padding: 10px;
+    }
 }
 @media(max-width: 1300px){
     .useful__item{
@@ -122,6 +131,31 @@
         max-width: 430px;
         top: -50px;
     }
+    .profile__tabs-content {
+        padding: 15px;
+    }
+    .support__bg {
+        width: 600px;
+        right: -150px;
+    }
+    .footer.support .footer__disign {
+        margin-right: 150px;
+    }
+}
+@media(max-width: 1230px){
+    .profile__tab-details span{
+        display: none;
+    }
+    .profile__tabs-inner{
+        margin: 21px 0;
+    }
+    .support__bg {
+        width: 530px;
+        right: -190px;
+    }
+    .footer.support .footer__disign {
+        margin-right: 70px;
+    }
 }
 @media(max-width: 1100px){
     .main__safery-bg {
@@ -141,8 +175,27 @@
         max-width: 390px;
         top: -57px;
     }
+    .support__bg{
+        display: none;
+    }
+    .footer.support .footer__disign{
+        margin-right: 0;
+    }
+    .support__text {
+        max-width: 520px;
+    }
+    .support__form{
+        margin: 0;
+    }
 }
 @media(max-width: 1000px){
+    p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .profile__container{
+        padding: 0 15px;
+    }
     .main__img-button,
     .main__safe,
     .main__images{
@@ -227,6 +280,44 @@
     }
     .footer__disign{
         margin-right: 0;
+    }
+    .profile__aside{
+        display: none;
+    }
+    .wrapper{
+        padding: 0;
+    }
+    .profile__navigation{
+        position: inherit;
+        background-color: transparent;
+        border-bottom: 0.5px solid #C4C4C4;
+        margin-bottom: 50px;
+    }
+    .profile__navigation-items{
+        justify-content: space-between;
+    }
+    .logo__mobile{
+        display: block; 
+    }
+    .language__select{
+        display: none;
+    }
+    .profile__navigation-menu{
+        display: block;
+    }
+    .profile__navigation-menu svg{
+        top: 5px;
+        left: 5px;
+    }
+    .profile .icon-warpper:nth-child(2) {
+        margin: 0 30px;
+    }
+    .support__btn{
+        max-width: 468px;
+        width: 100%;
+    }
+    .support__form{
+        margin-bottom: 140px;
     }
 }
 @media(max-width: 655px){
