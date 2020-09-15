@@ -459,6 +459,8 @@
     .footer__socila-list{
         position: absolute;
         top: -56px;
+        display: flex;
+        justify-content: center;
     }
     .footer__inner{
         padding: 24px 0 17px;
