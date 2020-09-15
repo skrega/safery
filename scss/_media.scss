@@ -327,6 +327,25 @@
         min-height: 498px;
         top: 70px;
     }
+    .argee__inner {
+        padding: 60px 0;
+    }
+    .argee__title {
+        margin-bottom: 50px;
+    }
+    .argee__list {
+        margin: 40px 0 80px;
+    }
+    .argee__item {
+        padding-left: 33px;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 23px;
+        &::before{
+            top: 2px;
+        }
+    }
+    
 }
 @media(max-width: 768px){
     .deal__book-adaptive{
@@ -338,6 +357,9 @@
     }
     .calculator{
         padding-bottom: 80px;
+    }
+    .argee__about-notice span{
+        display: none;
     }
 }
 @media(max-width: 655px){
@@ -360,6 +382,9 @@
     }
     .agree-success__img{
         top: 30px;
+    }
+    .argee__inner {
+        padding: 60px 0 130px;
     }
 }
 
@@ -421,6 +446,11 @@
     }
     .language__select svg{
         top: 1px;
+    }
+}
+@media(max-width: 375px){
+    .argee__about-info span{
+        display: block;
     }
 }
 @media(max-width: 365px){
