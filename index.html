@@ -21,6 +21,7 @@
             <div class="header__inner">
                 <a href="#" class="logo">
                     <picture>
+                        <source srcset="images/logo@1x.png 1x" media="(max-width: 500px)">
                         <img src="images/logo.png" srcset="images/logo@2x.png 2x, images/logo@3x.png 3x" alt="">
                     </picture>
                 </a>
@@ -34,7 +35,7 @@
                     </div>
                     <a class="header__login" data-fancybox data-src="#login" href="javascript:;">
                         <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2222 17V15.2222C15.2222 14.2792 14.8476 13.3749 14.1808 12.7081C13.514 12.0413 12.6097 11.6667 11.6667 11.6667H4.55555C3.61256 11.6667 2.70819 12.0413 2.0414 12.7081C1.3746 13.3749 1 14.2792 1 15.2222V17M11.6667 4.55556C11.6667 6.51923 10.0748 8.11111 8.11111 8.11111C6.14743 8.11111 4.55555 6.51923 4.55555 4.55556C4.55555 2.59188 6.14743 1 8.11111 1C10.0748 1 11.6667 2.59188 11.6667 4.55556Z" stroke="#646464" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Войти
+                        <span>Войти</span>
                     </a>
                 </div>
             </div>
@@ -67,6 +68,7 @@
                     <h1 class="deal__title title">
                         Что такое безопасная сделка?
                     </h1>
+                    <img class="deal__book-adaptive" src="images/book-all.png" alt="">
                     <div class="deal__text">
                         <p>
                             Safery - это сервис для защиты покупателей и продавцов в Интернете.
@@ -84,10 +86,8 @@
                     </div>
                 </div>
                 <div class="deal__images">
-                    <img class="deal__images-hover deal__images-fork" src="images/fork.png" alt="">
-                    <img class="deal__book"  src="images/book.png" alt="">
-                    <img class="deal__images-hover deal__images-knife" src="images/knife.png" alt="">
-                    <img class="deal__cherry deal__images-hover" src="images/cherry.png" alt="" >
+                    <img class="deal__book" src="images/book.png" alt="">
+                    <img class="deal__book-hover" src="images/book-all.png" alt="">
                 </div>
             </div>
         </div>
@@ -98,56 +98,58 @@
                 Как это работает?
             </h1>
             <div class="stages__inner">
-                <div class="stages__item">
-                    <div class="stages__item-img stages__item-first">
-                        <img class="stages__item-dark" src="images/stages__item-1.png" alt="">
-                        <img class="stages__item-color" src="images/stages__item-1--color.png" alt="">
+                <div class="stages__items">
+                    <div class="stages__item">
+                        <div class="stages__item-img stages__item-first">
+                            <img class="stages__item-dark" src="images/stages__item-1.png" alt="">
+                            <img class="stages__item-color" src="images/stages__item-1--color.png" alt="">
+                        </div>
+                        <h4 class="stages__item-title">
+                            Заключение сделки
+                        </h4>
+                        <div class="stages__item-text">
+                            Вы создаете сделку
+                            и отправьте своему партнеру для согласования условий.
+                        </div>
                     </div>
-                    <h4 class="stages__item-title">
-                        Заключение сделки
-                    </h4>
-                    <div class="stages__item-text">
-                        Вы создаете сделку
-                        и отправьте своему партнеру для согласования условий.
+                    <div class="stages__item">
+                        <div class="stages__item-img stages__item-second">
+                            <img class="stages__item-dark" src="images/stages__item-2.png" alt="">
+                            <img class="stages__item-color" src="images/stages__item-2--color.png" alt="">
+                        </div>
+                        <h4 class="stages__item-title">
+                            Резервирование средств
+                        </h4>
+                        <div class="stages__item-text">
+                            После согласования условий покупатель перечисляет денежные средства на счет сервиса. Мы
+                            блокируем сумму для обеих сторон до завершения сделки.
+                        </div>
                     </div>
-                </div>
-                <div class="stages__item">
-                    <div class="stages__item-img stages__item-second">
-                        <img class="stages__item-dark" src="images/stages__item-2.png" alt="">
-                        <img class="stages__item-color" src="images/stages__item-2--color.png" alt="">
+                    <div class="stages__item">
+                        <div class="stages__item-img stages__item-third">
+                            <img class="stages__item-dark" src="images/stages__item-3.png" alt="">
+                            <img class="stages__item-color" src="images/stages__item-3--color.png" alt="">
+                        </div>
+                        <h4 class="stages__item-title">
+                            Выполнение условий
+                        </h4>
+                        <div class="stages__item-text">
+                            продавец, зная, что сделка обеспечена покупателем и мы удерживаем для него сумму, может
+                            приступить к поставке товара, выполнению работ или оказанию услуг.
+                        </div>
                     </div>
-                    <h4 class="stages__item-title">
-                        Резервирование средств
-                    </h4>
-                    <div class="stages__item-text">
-                        После согласования условий покупатель перечисляет денежные средства на счет сервиса. Мы
-                        блокируем сумму для обеих сторон до завершения сделки.
-                    </div>
-                </div>
-                <div class="stages__item">
-                    <div class="stages__item-img stages__item-third">
-                        <img class="stages__item-dark" src="images/stages__item-3.png" alt="">
-                        <img class="stages__item-color" src="images/stages__item-3--color.png" alt="">
-                    </div>
-                    <h4 class="stages__item-title">
-                        Выполнение условий
-                    </h4>
-                    <div class="stages__item-text">
-                        продавец, зная, что сделка обеспечена покупателем и мы удерживаем для него сумму, может
-                        приступить к поставке товара, выполнению работ или оказанию услуг.
-                    </div>
-                </div>
-                <div class="stages__item">
-                    <div class="stages__item-img stages__item-four">
-                        <img class="stages__item-dark" src="images/stages__item-4.png" alt="">
-                        <img class="stages__item-color" src="images/stages__item-4--color.png" alt="">
-                    </div>
-                    <h4 class="stages__item-title">
-                        Завершение сделки
-                    </h4>
-                    <div class="stages__item-text">
-                        Как только обязательства продавца исполняются, покупатель подтверждает сделку в своем личном
-                        кабинете, либо мы сами переводим деньги продавцу.
+                    <div class="stages__item">
+                        <div class="stages__item-img stages__item-four">
+                            <img class="stages__item-dark" src="images/stages__item-4.png" alt="">
+                            <img class="stages__item-color" src="images/stages__item-4--color.png" alt="">
+                        </div>
+                        <h4 class="stages__item-title">
+                            Завершение сделки
+                        </h4>
+                        <div class="stages__item-text">
+                            Как только обязательства продавца исполняются, покупатель подтверждает сделку в своем личном
+                            кабинете, либо мы сами переводим деньги продавцу.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,6 +166,9 @@
                         <h2 class="useful__item-title">
                             Интернет магазины
                         </h2>
+                        <picture>
+                            <img class="useful__item-img" src="images/online__store-bg.png" srcset="images/online__store-bg@2x.png 2x, images/online__store-bg@3x.png 3x" alt="">
+                        </picture>
                         <ul class="useful__list">
                             <li class="useful__list-item">
                                 Увеличение количества оплат до 30%
@@ -213,6 +218,9 @@
                         <h2 class="useful__item-title">
                             Фрилансеры
                         </h2>
+                        <picture>
+                            <img class="useful__item-img" src="images/freelance-bg.png" srcset="images/freelance-bg@2x.png 2x, images/freelance-bg@3x.png 3x" alt="">
+                        </picture>
                         <ul class="useful__list">
                             <li class="useful__list-item">
                                 Комиссия за услугу гаранта (сейфа) всего 1.5%
@@ -232,6 +240,9 @@
                         <h2 class="useful__item-title">
                             Физические лица
                         </h2>
+                        <picture>
+                            <img class="useful__item-img" src="images/individuals.png" srcset="images/individuals@2x.png 2x, images/individuals@3x.png 3x" alt="">
+                        </picture>
                         <ul class="useful__list">
                             <li class="useful__list-item">
                                 Все покупки в интернете становятся на 100% безопасными.
@@ -310,7 +321,6 @@
                         <button class="questions__form-btn button" type="submit">Отправить</button>
                     </form>
                 </div>
-                <img class="questions__img" src="images/questions-img.png" alt="">
             </div>
         </div>
     </section>
@@ -352,8 +362,10 @@
                         </picture>
                     </a>
                 </div>
+                <img class="footer__img" src="images/questions-img.png" alt="">
             </div>
         </div>
+      
     </footer>
 
 

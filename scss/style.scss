@@ -190,9 +190,9 @@
     padding: 97px 0 150px;
     &__inner{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         &:hover{
-            .deal__images-hover{
+            .deal__book-hover{
                 opacity: 1;
             }
         }
@@ -202,33 +202,25 @@
         max-width: 570px;
     }
     &__text{
-        width: 568px;
+        max-width: 568px;
         p{
             margin-top: 45px;
         }
     }
-    &__images-hover{
-        transition: all .5s;
-        opacity: 0;
-    }
     &__images{
         position: relative;
+        max-width: 450px;
+        width: 100%;
     }
-    &__images-knife{
-        right: -73px;
-        bottom: 6px;
-    }
-    &__images-hover {
+    &__book-hover{
         position: absolute;
+        left: -90px;
+        top: 0;
+        opacity: 0;
+        transition: all .3s;
     }
-    &__images-fork{
-        left: -91px;
-        bottom: 15px;
-    }
-    &__cherry{
-        position: absolute;
-        top: 101px;
-        left: 184px;
+    &__book-adaptive{
+        display: none;
     }
 }
 //end deal
@@ -239,9 +231,11 @@
         text-align: center;
     }
     &__inner{
+        margin-top: 70px;
+    }
+    &__items{
         display: flex;
         justify-content: space-between;
-        margin-top: 70px;
     }
     &__item{
         width: 231px;
@@ -290,6 +284,9 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 100px;
+    }
+    &__item-img{
+        display: none;
     }
     &__title{
         width: 569px;
@@ -390,8 +387,7 @@
         background-color: #FFC575;
         color: #6A3492;
         line-height: 17px;
-        max-width: 250px;
-        width: 100%;
+        width: 250px;
         padding: 16px 5px;
         font-weight: 400;
         border: none;
@@ -449,7 +445,7 @@
 .questions{
     padding-bottom: 100px;
     &__inner{
-        position: relative;
+        
     }
    &__text{
         color: #4A4A4A;
@@ -466,12 +462,6 @@
    &__form-btn{
        border: none;
    }
-   &__img{
-       position: absolute;
-       right: -392px;
-       top: 0;
-   }
-   
 }
 //end questions
 
@@ -484,6 +474,7 @@
         border-top: 1px solid #DBDBDB;
         box-shadow: 0px 1px 0px #FFFFFF;
         padding: 30px 0 25px;
+        position: relative;
     }
     &__copy,
     &__disign{
@@ -547,6 +538,11 @@
             stroke: #7D4F9E;
             fill: transparent;
         }
+    }
+    &__img{
+        position: absolute;
+        right: -400px;
+        bottom: 0;
     }
 }
 //end footer
@@ -971,6 +967,7 @@
     .profile__options-item + .profile__options-item {
         margin-left: 35px;
     }
+    
 }
 .profile__tab-info.active{
     .profile__tab-box:last-child{
@@ -1000,6 +997,9 @@
     margin-bottom: 100px;
     &-form{
         padding: 70px 35px 35px;
+        .jq-selectbox__dropdown{
+            left: 0px;
+        }
     }
     &-title{
         color: #646464;
@@ -1060,9 +1060,7 @@
         display: block;
         margin-left: auto;
     }
-    .jq-selectbox__dropdown{
-        top: 46px;
-    }
+   
    
 }
 .profile__output.active{
@@ -1074,6 +1072,9 @@
     margin-bottom: 45px;
     &-inner{
         padding: 50px 35px 35px;
+        .jq-selectbox__dropdown {
+            left: 0px;
+        }
     }
     &-progress{
         max-width: 1277px;
@@ -1091,7 +1092,6 @@
             position: absolute;
             content: "";
             background-color: #EBECF0;
-            //background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.048) 31.61%, rgba(255, 255, 255, 0.4) 65.85%), #F7F7F7;
             background-blend-mode: soft-light, normal;
             box-shadow: -1px -1px 1px #FAFBFF, 2px 2px 3px #A6ABBD;
             border: 8px solid #F7F7F7;
@@ -1192,6 +1192,20 @@
     }
     &-date{
         width: 290px;
+        position: relative;
+        transition: all .4s;
+        cursor: pointer;
+    }
+    &-datepicker{
+        width: 100%;
+    }
+    &-date svg{
+        position: absolute;
+        right: 12px;
+        top: 13px;
+    }
+    &-date:hover svg path{
+        fill: #7D4F9E;
     }
     &-buttons{
         display: flex;
@@ -1203,6 +1217,10 @@
     }
    
 }
+.datepicker-here{
+    cursor: pointer;
+}
+
 .deal__create-row:nth-child(2){
    .deal__create-name{
        padding-bottom: 55px;
@@ -1510,15 +1528,8 @@
 
 //settings start
 .settings{
-    .jq-selectbox__trigger-arrow {
-        position: absolute;
-        top: 18px;
-        right: 12px;
-        width: 0;
-        height: 0;
-        border-top: 12px solid #9A9D9D;
-        border-right: 7px solid transparent;
-        border-left: 7px solid transparent;
+    &__finance{
+        max-width: 1236px;
     }
     &__items{
         display: flex;
@@ -1537,13 +1548,11 @@
         text-align: right;
         margin-right: 50px;
     }
-    &__finance-content:nth-child(2){
-        margin-bottom: 25px;
-    }
     &__finance-row{
         display: flex;
-        align-items: center;
+        align-items: baseline;
         margin-top: 30px;
+        justify-content: flex-start;
     }
     &__finance-card{
         max-width: 953px;
@@ -1601,15 +1610,25 @@
     &__profile-input{
         margin-bottom: 10px;
         width: 100%;
+        padding-right: 35px;
     }
     &__profile-password{
         position: relative;
     }
     &__profile-btn{
+        padding: 0;
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 10px;
         background-color: transparent;
+        width: 28px;
+        height: 26px;
+        background-image: url(../images/invisible-icon.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__profile-btn.active{
+        background-image: url(../images/view-icon.svg);
     }
     &__items-btn{
         margin-bottom: 30px;
@@ -1657,6 +1676,19 @@
     .jq-file:hover .jq-file__name{
         background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #F6F6F6;
         color: #7D4F9E;
+    }
+    .jq-selectbox__trigger-arrow {
+        position: absolute;
+        top: 18px;
+        right: 12px;
+        width: 0;
+        height: 0;
+        border-top: 12px solid #9A9D9D;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+    }
+    .jq-selectbox__dropdown {
+        left: 0px;
     }
 }
 //settings end
@@ -1896,7 +1928,7 @@
 .agree-success{
     &__inner{
         padding-top: 4vw;
-        // padding-bottom: 263px;
+        margin-bottom: 120px;
         text-align: center;
         position: relative;
     }

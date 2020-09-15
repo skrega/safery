@@ -19,13 +19,6 @@ $(function(){
         ratedFill: "#FABB6F",
     });
     
-    // $("#profile-partner__rate").rateYo({
-    //     rating: 4,
-    //     starWidth: "15px",
-    //     normalFill: "#C4C4C4",
-    //     ratedFill: "#FABB6F",
-    //     readOnly: true
-    // });
     $(".rate-star").rateYo({
         rating: 5,
         starWidth: "15px",
@@ -42,6 +35,7 @@ $(function(){
         readOnly: true
     });
     
+    $('.deal__create-datepicker').datepicker([]);
 
     $('.profile__tabs .tab, .profile-partner__tab, .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
@@ -64,8 +58,13 @@ $(function(){
     $('.details-btn').on('click', function () {
         $('.profile__tab-descr, .profile__tab-info, .profile__tab-options').toggleClass('active');
     });
+    
+    $('.settings__profile-btn').on('click', function () {
+        $(this).toggleClass('active');
+    });
+    
 
-    $('.profile__output-label').click(function(){
+    $('.profile__output-label').on('click', function (){
         $('.profile__output-label').removeClass('active');
         $(this).addClass('active');
       });

@@ -4,6 +4,11 @@
 html{
     box-sizing: border-box;
 }
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
 
 *,*::before, *::after{
     box-sizing: inherit;
@@ -823,6 +828,25 @@ textarea{
     }
 }
 //radio end
+
+//datepicker start
+.datepicker{
+    z-index: 100000;
+}
+.datepicker--day-name{
+    color: #7D4F9E;
+}
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current- {
+    color: #fff;
+    background: #7D4F9E;
+}
+.datepicker--cell.-selected-.-focus-{
+    background: #7D4F9E;
+}
+.datepicker--cell.-current- {
+    color: #7D4F9E;
+}
+//datepicker end
 
 //rate star start
 .jq-ry-container{
