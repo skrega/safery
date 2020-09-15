@@ -136,25 +136,21 @@
 
 //start main
 .main{
-    &__container{
-        max-width: 1490px;
-        margin-left: 6.5vw;
-    }
-    &__inner{
+    &__wrapper{
        display: flex;
        align-items: center; 
+       justify-content: center;
        position: relative;
-       margin-top: 30px;
+       margin-top: 150px;
+       padding-bottom: 227px;
+    }
+    &__safe{
+        position: absolute;
+        left: -13vw;
     }
     &__content{
         text-align: center;
         position: relative;
-        padding: 270px 0 0;
-    }
-    &__safery-bg{
-        position: absolute;
-        left: -240px;
-        top: -50px;
     }
     &__title{
         margin-bottom: 90px;
@@ -163,18 +159,25 @@
         display: block;
         margin: 0 auto;
     }
+    &__images{
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        right: 0;
+    }
     &__img-clips{
         position: absolute;
-        right: 150px;
-        bottom: 70px;
+        left: -190px;
+        bottom: -160px;
     }
    &__img-button{
         position: absolute;
-        top: 50px;
-        right: 160px;
+        top: -50px;
+        right: 100px;
+        width: 140px;
    }
-   &__img-pen{
-        margin-left: 200px;
+   &__safe-mobile{
+       display: none;
    }
    .particles-canvas{
         left: 250px;

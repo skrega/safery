@@ -3,6 +3,13 @@
         width: 75%;
     }
 }
+@media(max-width: 1550px){
+    .main__safe {
+        left: -9vw;
+        top: -90px;
+        max-width: 540px;
+    }
+}
 @media(max-width: 1440px){
     .main__container{
         margin-left: 0;
@@ -55,6 +62,15 @@
         right: -330px;
     }
 }
+@media(max-width: 1400px){
+    .main__safery-bg{
+        max-width: 760px;
+    }
+    .main__safe {
+        left: -5vw;
+        max-width: 500px;
+    }
+}
 @media(max-width: 1360px){
     .profile-partner__information {
         width: 50%;
@@ -101,8 +117,16 @@
     .footer__img {
         right: -270px;
     }
+    .main__safe {
+        left: -1vw;
+        max-width: 430px;
+        top: -50px;
+    }
 }
 @media(max-width: 1100px){
+    .main__safery-bg {
+        max-width: 660px;
+    }
     .deal__text {
         max-width: 470px;
     }
@@ -112,8 +136,34 @@
     .stages__items{
         width: 1080px;
     }
+    .main__safe {
+        left: -2vw;
+        max-width: 390px;
+        top: -57px;
+    }
 }
 @media(max-width: 1000px){
+    .main__img-button,
+    .main__safe,
+    .main__images{
+        display: none;
+    }
+    .main__safe-mobile{
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    .main__safery-bg {
+        max-width: 100%;
+        margin-left: -80px;
+    }
+    .main__title {
+        margin-bottom: 20px;
+    }
+    .main__wrapper{
+        margin-top: 60px;
+        padding-bottom: 0px;
+    }
     .deal{
         padding-bottom: 80px;
     }
@@ -224,6 +274,9 @@
     
 }
 @media(max-width: 500px){
+    .main__safery-bg{
+        margin-left: 0;
+    }
     .questions__form-btn{
         width: 100%;
     }

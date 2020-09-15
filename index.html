@@ -42,22 +42,40 @@
         </div>
     </header>
     <section class="main">
-        <div class="main__container">
-            <div class="main__inner">
+        <div class="container">
+            <div class="main__wrapper">
                 <img src="images/safe.png" alt="" class="main__safe">
                 <div class="main__content">
-                    <img src="images/safery-bg.png" alt="" class="main__safery-bg">
+                    <picture>
+                        <source srcset="images/safery-bg__mobile.png 1x" media="(max-width: 500px)">
+                        <img class="main__safery-bg" src="images/safery-bg.png" srcset="images/safery-bg@2x.png 2x, images/safery-bg@3x.png 3x" alt="" >
+                    </picture>
                     <h3 class="main__title">
                         Cервис безопасных сделок для бизнеса и частных лиц
                     </h3>
+                    <picture>
+                        <source srcset="images/safe__mobile.png 1x" media="(max-width: 600px)">
+                        <img class="main__safe-mobile" src="images/safe.png" srcset="images/safe@2x.png 2x, images/safe@3x.png 3x" alt="">
+                    </picture>
+                    
                     <div class="button__wrapper">
                         <a href="profile.html" class="action"><svg class="icon icon--rewind"><use xlink:href="#icon-rewind"></use></svg></a>
                         <a href="profile.html" class="particles-button">Начать</a>
                     </div>
                 </div>
-                <img src="images/clips.png" alt="" class="main__img-clips">
-                <img src="images/main-button.png" alt="" class="main__img-button">
-                <img src="images/pen.png" alt="" class="main__img-pen">
+                <div class="main__images">
+                    <picture>
+                        <img class="main__img-clips" src="images/clips.png" srcset="images/clips@2x.png 2x, images/clips@3x.png 3x" alt="">
+                    </picture>
+                    <picture>
+                        <img class="main__img-pen" src="images/pen.png" srcset="images/pen@2x.png 2x, images/pen@3x.png 3x" alt="">
+                    </picture>
+                </div>
+                <picture>
+                    <img class="main__img-button" src="images/main-button.png" srcset="images/main-button@2x.png, 2x, images/main-button@3x.png, 3x" alt="">
+                </picture>
+               
+               
             </div>
         </div>
     </section>
