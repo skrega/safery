@@ -555,6 +555,9 @@
 .profile__navigation-menu{
     display: none;
 }
+.profile__deal-link{
+    display: none;
+}
 .profile{
     height: 100vh;
     overflow-x: hidden;
@@ -786,7 +789,7 @@
     &__balance-btn{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
     }
     &__balance-icon{
         margin-right: 10px;
@@ -1496,10 +1499,10 @@
     }
     &__table-item{
         display: flex;
+        align-items: center;
         background-color: #fff;
     }
     &__table-item:nth-child(even){
-        padding: 14px 10px 15px;
         background-color: #F3F7F7;
         border-top: 0.5px solid #C4C4C4;
         border-bottom: 0.5px solid #C4C4C4;
@@ -1530,8 +1533,12 @@
         font-weight: 400;
         width: 366px;
         line-height: 21px;
+        padding: 9px 10px 10px;
+        span{
+            display: none;
+        }
         & + .history__table-content{
-            padding-left: 20px;
+            padding-left: 25px;
         }
     }
 }

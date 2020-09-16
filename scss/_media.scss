@@ -297,6 +297,7 @@
     }
     .profile__aside.active{
         transform: translateX(0px);
+        z-index: 11;
     }
     .wrapper{
         padding: 0;
@@ -383,7 +384,17 @@
     .deal__about-row {
         padding: 20px 10px 10px;
     }
-    
+    .history__table{
+        padding: 15px;
+    }
+    .profile__item-head {
+        padding: 20px 0 20px 20px;
+    }
+    .profile__deal-link{
+        display: block;
+        padding: 0;
+        margin-bottom: 50px;
+    }
 }
 @media(max-width: 768px){
     .deal__book-adaptive{
@@ -418,6 +429,8 @@
     }
     .profile__balance-btn{
         margin: 0 auto;
+        max-width: 327px;
+        width: 100%;
     }
     .profile__deal{
         padding: 0;
@@ -450,6 +463,35 @@
     .profile__search,
     .profile__search-input{
         width: 100%;
+    }
+    .history__inner.inner{
+        box-shadow: none;
+        background: transparent;
+
+        border-radius: 0;
+        .profile__item-head{
+            margin-top: 0;
+        }
+    }
+    .history__table{
+        margin-top: 20px;
+        background: linear-gradient(317.7deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 105.18%),#F6F6F6;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255,255,255,0.4);
+        box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px rgba(166,171,189,0.37);
+        border-radius: 7px;
+    }
+    .history__table-content{
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .history__table-title{
+        color: #646464;
+    }
+    .history__table-title+.history__table-title,
+    .history__table-content+.history__table-content{
+        padding-left: 9px;
     }
 }
 @media(max-width: 655px){
@@ -525,6 +567,20 @@
         justify-content: space-between;
     }
     .deal__about-tumb:last-child{
+        display: none;
+    }
+    .history__inner{
+        margin-bottom: 135px;
+    }
+    .history__table-content{
+        span{
+            display: inline-block;
+        }
+    }
+    .history__table-currency{
+        display: none;
+    }
+    .history__table-title:nth-child(4){
         display: none;
     }
 }
@@ -606,18 +662,40 @@
     .profile__options-btn{
         width: 100%;
     }
+    .history__table-title {
+        padding: 9px 4px 10px;
+    }
+    .history__table-title+.history__table-title, 
+    .history__table-content+.history__table-content {
+        padding-left: 3px;
+    }
 }
 
 @media(max-width: 425px){
     .deal__about-tumb {
         margin-right: 9px;
     }
+    .history__table-content{
+        font-size: 14px;
+        padding: 9px 2px 10px;
+    }
+    .profile__deal-button{
+        width: 100%;
+    }
+    .profile__deal-button span{
+        width: 55px;
+    }
 }
 @media(max-width: 375px){
     .argee__about-info span{
         display: block;
     }
-
+    .history__table-item:nth-child(even){
+        justify-content: space-between;
+    }
+    .history__table-price{
+        width: 312px;
+    }
 }
 @media(max-width: 365px){
     h1{
@@ -646,5 +724,13 @@
     .profile__tab-info.active .profile__tab-box{
         width: 100%;
     }
-    
+    .history .profile__container{
+        padding: 0 2px;
+    }
+    .history__table {
+        padding: 5px;
+    }
+    .history__table-title {
+        padding: 9px 0px 10px;
+    }
 }
