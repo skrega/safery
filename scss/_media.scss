@@ -48,7 +48,7 @@
     .profile-partner__information{
         width: 41%;
     }
-    .footer__disign{
+    .footer.support .footer__disign{
         margin-right: 60px;
     }
     .footer__img {
@@ -153,6 +153,10 @@
     .deal__create-inner {
         padding: 50px 20px 35px;
     }
+    .creating-invitation__input{
+        max-width: 340px;
+        margin: 0 20px;
+    }
 }
 @media(max-width: 1260px){
     .deal__step-first .profile__output-input {
@@ -179,8 +183,14 @@
         width: 530px;
         right: -190px;
     }
-    .footer.support .footer__disign {
+    .footer__disign {
         margin-right: 70px;
+    }
+    .deal__about-box{
+        padding: 20px 6px;
+    }
+    .creating__table-invitation {
+        padding: 0px 17px 35px;
     }
 }
 @media(max-width: 1160px){
@@ -202,6 +212,18 @@
     }
     .deal__create-box {
         margin-right: 17px;
+    }
+    .creating__table-line{
+        flex-wrap: wrap;
+    }
+    .creating-invitation-content {
+        text-align: left;
+        width: 100%;
+    }
+    .creating-invitation__input {
+        max-width: 100%;
+        margin: 10px 0 20px;
+        width: 100%;
     }
 }
 @media(max-width: 1100px){
@@ -475,6 +497,9 @@
     .deal__create-row:nth-child(4){
         margin-bottom: 40px;
     }
+    .deal__about-box{
+        width: 180px;
+    }
 }
 @media(max-width: 768px){
     .deal__create.inner{
@@ -622,6 +647,50 @@
         max-width: 220px;
         width: 100%;
     }
+    .deal__about-info{
+        flex-direction: column-reverse;
+    }
+    .deal__about-column{
+        width: 100%;
+    }
+    .deal__about-box{
+        width: 50%;
+    }
+    .deal__about-column.inactive:nth-child(2){
+        border-left: none;
+    }
+    .deal__about-column:nth-child(1).inactive{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .deal__about-item{
+        border-bottom: 0.5px solid #C4C4C4;
+    }
+    .deal__create-wrapper{
+        background: linear-gradient(317.7deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 105.18%),#F6F6F6;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255,255,255,0.4);
+        box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px rgba(166,171,189,0.37);
+        border-radius: 7px; 
+        padding: 15px;
+    }
+    .deal__create-about{
+        margin-top: 0;
+    }
+    .creating-second .deal__create-about {
+        margin: 0 15px;
+    }
+    .deal__about-descr.inactive {
+        border-bottom: none;
+    }
+    .deal__about-wrapper{
+        background: linear-gradient(317.7deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 105.18%),#F6F6F6;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255,255,255,0.4);
+        box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px rgba(166,171,189,0.37);
+        border-radius: 7px;
+        padding-top: 15px;
+    }
 }
 @media(max-width: 655px){
     .footer__inner{
@@ -745,6 +814,16 @@
     .deal__create-row:nth-child(4) {
         margin-bottom: 20px;
     }
+    .creating__table-succses{
+        padding: 15px;
+    }
+    .creating-invitation__btn{
+        width: 100%;
+    }
+    .creating-invitation__input{
+        padding: 11px;
+    }
+   
 }
 @media(max-width: 500px){
     .main__safery-bg{
@@ -854,7 +933,6 @@
         padding: 50px 7px 35px;
     }
 }
-
 @media(max-width: 425px){
     .deal__about-tumb {
         margin-right: 9px;
@@ -875,7 +953,13 @@
     .deal__create-radios {
         width: 320px;
     }
-   
+    .creating-second .creating__table-buttons {
+        margin: 21px 15px 40px 0;
+    }
+    .creating__table-text{
+        font-size: 15px;
+        line-height: 23px;
+    }
 }
 @media(max-width: 375px){
     .argee__about-info span{
@@ -889,6 +973,20 @@
     }
     .jq-selectbox__select {
         padding: 8px 70px 0 13px;
+    }
+   
+}
+@media(max-width: 374px){
+    .creating-invitation__input:nth-child(2){
+        overflow-x: scroll;
+    }   
+    .creating-second .creating__table-buttons{
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+    .creating__table-btn:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 15px;
     }
 }
 @media(max-width: 365px){
