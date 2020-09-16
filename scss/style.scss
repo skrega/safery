@@ -1028,6 +1028,9 @@
         background-color: #EBECF0;
         color: #000;
         width: 300px;
+        text-align: center;
+        display: inline-block;
+        padding: 15px 10px 14px;
         &:hover{
             background-color: #EBECF0;
         }
@@ -1036,6 +1039,10 @@
         display: flex;
         align-items: center;
         margin-bottom: 35px;
+    }
+    &-box{
+        display: flex;
+        align-items: center;
     }
     &-input{
         width: 294px;
@@ -1176,12 +1183,9 @@
         display: flex;
         background-color: #DCDCDC;
         border-radius: 7px;
-        width: 443px;
+        max-width: 443px;
         margin-top: 20px;
         margin-bottom: 70px;
-    }
-    &-wrapper{
-        max-width: 1240px;
     }
     &-row{
         display: flex;
@@ -1262,7 +1266,7 @@
         display: block;
         border-radius: 7px;
         padding: 11px 23px;    
-        min-width: 221px;
+        width: 221px;
         transition: color 0.2s ease-out 0.1s;
         transition: 0.2s ease-out 0.1s;
         background: #DCDCDC;
