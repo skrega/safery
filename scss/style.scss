@@ -1286,19 +1286,16 @@
 }
 //deal__create end
 //creating-second start
-
 .deal__create{
     &-about{
-        margin-top: 90px;
+        margin: 90px 35px 0;
     }
 }
 .creating-second{
     .deal__create-inner {
         padding: 50px 0px 35px;
     }
-    .deal__create-about{
-        margin: 0 35px;
-    }
+   
     .creating__table-buttons{
         margin: 21px 35px 40px 0;
     }
@@ -1390,6 +1387,11 @@
     }
     &__link{
         margin-right: 50px;
+    }
+}
+.deal__step-second.descr{
+    .deal__about.extended{
+        margin: 0 35px;
     }
 }
 //creating-second end
@@ -1926,6 +1928,7 @@
 
 //agree-condition start
 .agree-condition{
+    margin-bottom: 78px;
     &__info{
         background: #F2F2F2;
         box-shadow: inset 2px 0px 6px rgba(100, 100, 100, 0.17);

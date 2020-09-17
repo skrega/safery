@@ -498,11 +498,42 @@
         margin-bottom: 40px;
     }
     .deal__about-box{
-        width: 180px;
+        width: 50%;
+    }
+    .deal__about-info{
+        flex-direction: column-reverse;
+    }
+    .deal__about-column,
+    .deal__about-inner{
+        width: 100%;
+    }
+    .deal__about.extended .deal__about-box{
+        width: 50%;
+    }
+    .deal__about-descr {
+        padding-top: 0px;
+    }
+    .deal__about-descr{
+        padding-top: 10px;
+        border-top: 0.5px solid #C4C4C4;
+    }
+    .deal__about-column:nth-child(1).inactive{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .deal__about-item{
+        border-bottom: 0.5px solid #C4C4C4;
+    }
+    .deal__about-column.inactive:nth-child(2){
+        border-left: none;
+    }
+    .agree-condition__wrapper {
+        padding: 0 15px 27px;
     }
 }
 @media(max-width: 768px){
-    .deal__create.inner{
+    .deal__create.inner,
+    .agree-condition__inner.inner{
         background: transparent;
         background-blend-mode: inherit;
         border: none;
@@ -560,10 +591,23 @@
         padding: 0;
     }
     .profile__item-head{
-        font-weight: 500;
+        font-weight: 400;
         padding-left: 0;
         padding-top: 0;
         margin-top: 50px;
+        border-bottom: none;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -12px;
+            right: 0;
+            top: 40px;
+            height: 0.5px;
+            background-color: #C4C4C4;
+            width: 130%;
+
+        }
     }
     .profile__tabs-inner{
         flex-wrap: wrap;
@@ -625,10 +669,6 @@
         border-radius: 7px;
         padding: 53px 15px 19px;
     }
-    // .deal__create-title{
-    //     width: 130px;
-    //     margin: 10px auto 0;
-    // }
     .deal__create-step{
         width: 130px;
     }
@@ -656,16 +696,7 @@
     .deal__about-box{
         width: 50%;
     }
-    .deal__about-column.inactive:nth-child(2){
-        border-left: none;
-    }
-    .deal__about-column:nth-child(1).inactive{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .deal__about-item{
-        border-bottom: 0.5px solid #C4C4C4;
-    }
+    
     .deal__create-wrapper{
         background: linear-gradient(317.7deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 105.18%),#F6F6F6;
         background-blend-mode: soft-light, normal;
@@ -690,6 +721,43 @@
         box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px rgba(166,171,189,0.37);
         border-radius: 7px;
         padding-top: 15px;
+    }
+    .deal__about-tumb{
+        margin-right: 10px;
+    }
+    .deal__about {
+        margin: 0 10px;
+    }
+    .deal__about-images{
+        justify-content: flex-start;
+    }
+    .deal__create-agreed{
+        margin-left: 0;
+    }
+    .deal__step-second.descr .deal__about.extended {
+        margin: 0 10px;
+    }
+    .agree-condition__inner .deal__about-wrapper{
+        padding-top: 0;
+        margin-top: 30px;
+    }
+    .agree-condition__info{
+        margin: 0 0 40px;
+    }
+    .agree-condition__wrapper{
+        padding: 0 0 27px;
+    }
+    .agree-condition__text,
+    .agree-condition__buttons{
+        padding: 0 15px;
+    }
+    .agree-condition__info{
+        padding: 15px;
+        .agree-condition__text{
+            padding: 0;
+            margin-top: 20px;
+            font-size: 15px;
+        }
     }
 }
 @media(max-width: 655px){
@@ -741,9 +809,7 @@
     .tab-item__btn{
         width: 100%;
     }
-    .deal__about-images{
-        justify-content: flex-start;
-    }
+  
     .deal__about-tumb{
         margin-right: 30px;
     }
@@ -763,9 +829,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-    .deal__about-tumb:last-child{
-        display: none;
     }
     .history__inner{
         margin-bottom: 135px;
@@ -789,6 +852,24 @@
     }
     .deal__create-btn{
         width: 100%;
+    }
+    .creating-second .deal__about-descr {
+        padding: 20px 10px 13px 10px;
+    }
+    .deal__create{
+        margin-bottom: 135px;
+    }
+    .agree-condition{
+        margin-bottom: 135px;
+    }
+    .agree-condition__buttons{
+        flex-wrap: wrap;
+    }
+    .agree-condition__btn{
+        width: 100%;
+    }
+    .agree-condition__btn:nth-child(2){
+        margin-top: 20px;
     }
 }
 @media(max-width: 550px){
@@ -819,6 +900,7 @@
     }
     .creating-invitation__btn{
         width: 100%;
+        margin-top: 20px;
     }
     .creating-invitation__input{
         padding: 11px;
@@ -960,6 +1042,9 @@
         font-size: 15px;
         line-height: 23px;
     }
+    .deal__about-tumb {
+        width: 120px;
+    }
 }
 @media(max-width: 375px){
     .argee__about-info span{
@@ -993,6 +1078,9 @@
     h1{
         font-size: 30px;
         line-height: 35px;
+    }
+    .profile .icon-warpper:nth-child(2) {
+        margin: 0 10px;
     }
     .calculator .jq-selectbox,
     .calculator__form-input {
