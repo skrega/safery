@@ -370,8 +370,18 @@
         font-size: 16px;
         line-height: 25px;
     }
+    .wrapper{
+        padding: 0;
+    }
+    .profile{
+        position: relative;
+        height: auto;
+    }
     .profile__container{
         padding: 0 10px;
+    }
+    .profile__aside{
+        position: absolute;
     }
     .main__img-button,
     .main__safe,
@@ -470,9 +480,7 @@
         transform: translateX(0px);
         z-index: 11;
     }
-    .wrapper{
-        padding: 0;
-    }
+  
     .profile__navigation{
         position: inherit;
         background-color: transparent;
@@ -770,7 +778,7 @@
     .deal__create.inner,
     .agree-condition__inner.inner,
     .profile__output.inner,
-    .settings__profile.inner{
+    .settings__finance.inner{
         background: transparent;
         background-blend-mode: inherit;
         border: none;
@@ -870,9 +878,7 @@
         }
     }
     .history__table,
-    .profile__output-form,
-    .settings__wrapper,
-    .settings__finance{
+    .profile__output-form{
         margin-top: 20px;
         background: linear-gradient(317.7deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 105.18%),#F6F6F6;
         background-blend-mode: soft-light, normal;
@@ -916,17 +922,6 @@
     .settings__wrapper{
         margin-top: 0;
         border: none;
-    }
-    .settings__finance{
-        border-radius: 0;
-        border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px;
-        box-shadow: inset -5px 0px 10px #FAFBFF, inset 5px 0px 10px rgba(166,171,189,0.37);
-    }
-    .settings__wrapper{
-        border-radius: 0;
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
     }
     .settings__finance-head{
         margin-top: 0;
@@ -1032,8 +1027,8 @@
     }
     .settings_profile-balance{
         position: absolute;
-        left: 10px;
-        right: 10px;
+        left: 0px;
+        right: 0px;
         top: 0;
     }
     .settings__item:nth-child(2){
@@ -1054,6 +1049,48 @@
             display: none;
         }
     }
+    .settings__profile{
+        position: relative;
+        padding-bottom: 400px;
+    }
+    .settings__finance{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .profile__item-head{
+        border-bottom: 0.5px solid #C4C4C4;
+        padding-left: 15px;
+        &::before{
+            display: none;
+        }
+    }
+    .settings__inner-head{
+        display: none;
+    }
+    .settings__inner-title{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        display: block;
+        text-transform: uppercase; 
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            left: -10px;
+            right: 0;
+            width: 105%;
+            bottom: 0;
+            border-bottom: 0.5px solid #C4C4C4;
+        }
+    }
+       
 }
 @media(max-width: 680px){
     .deal__change-row{
@@ -1238,7 +1275,26 @@
     .dispute__modal-text p {
         margin-bottom: 15px;
     }
-
+    .settings__profile {
+        padding-bottom: 560px;
+    }
+    .settings__finance{
+        bottom: 130px;
+    }
+    .settings__items{
+        margin-bottom: 120px;
+    }
+    .settings .profile__container{
+        position: relative;
+    }
+    .settings__items-btn{
+        position: absolute;
+        bottom: 40px;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
 }
 @media(max-width: 550px){
     h1{
@@ -1333,6 +1389,13 @@
     }
     .profile__notification-text{
         margin: 10px 0 15px;
+    }
+    .confirmation-success__content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .confirmation-success__content span{
+        margin-bottom: 5px;
     }
 }
 @media(max-width: 475px){
@@ -1576,6 +1639,9 @@
     }
     .profile__notification-info {
         right: -110px;
+    }
+    .confirmation-success {
+        padding: 15px;
     }
 }
 @media(max-width: 340px){

@@ -1,8 +1,6 @@
 $(function(){
 
-    $('select, input[type="file"]').styler({
-
-    });
+    $('select, input[type="file"]').styler({});
 
     $("#user-rate").rateYo({
         rating: 4,
@@ -35,7 +33,7 @@ $(function(){
         readOnly: true
     });
     
-    $('.deal__create-datepicker').datepicker([]);
+    // $('.deal__create-datepicker').datepicker([]);
 
     $('.profile__tabs .tab, .profile-partner__tab, .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
@@ -61,8 +59,7 @@ $(function(){
     $('.profile__navigation-menu').on('click', function () {
         $('.profile__aside').toggleClass('active');
     });
-    
-    
+
     $('.settings__profile-btn').on('click', function () {
         $(this).toggleClass('active');
     });
