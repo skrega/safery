@@ -1055,6 +1055,23 @@
         }
     }
 }
+@media(max-width: 680px){
+    .deal__change-row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .deal__change-content{
+        margin-right: 0;
+        margin-bottom: 10px;
+        &::before{
+            display: none;
+        }
+    }
+    .deal__change-input,
+    .deal__create-date{
+        width: 100%;
+    }
+}
 @media(max-width: 655px){
     .footer__inner{
         flex-direction: column-reverse;
@@ -1202,6 +1219,26 @@
     .profile-partner {
         padding-bottom: 135px;
     }
+    .options__modal-title {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    .deal__modal-option{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+        button, 
+        a{
+            width: 100%;
+        }
+    }
+    .deal__cancel-back,
+    .deal__change-back{
+        margin-top: 20px;
+    }
+    .dispute__modal-text p {
+        margin-bottom: 15px;
+    }
+
 }
 @media(max-width: 550px){
     h1{
@@ -1246,6 +1283,9 @@
     .profile-partner .profile-partner-rate .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group svg+svg {
         margin-left: 10px !important;
     }
+    .options__modal{
+        padding: 30px 20px;
+    }
 }
 @media(max-width: 500px){
     .main__safery-bg{
@@ -1271,6 +1311,28 @@
     }
     .deal__create-radios{
         width: 360px;
+    }
+    .profile__notification-info{
+        width: 320px;
+        z-index: 11;
+    }
+    .profile__notification-head{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile__notification-title{
+        display: flex;
+        align-items: center;
+    }
+    .profile__notification-onread{
+        padding: 0;
+        margin-top: 5px;
+    }
+    .profile__notification-content {
+        padding: 15px 10px 14px 22px;
+    }
+    .profile__notification-text{
+        margin: 10px 0 15px;
     }
 }
 @media(max-width: 475px){
@@ -1508,5 +1570,16 @@
     }
     .profile-partner__btn {
         width: 90%;
+    }
+    .dispute__modal{
+        padding: 20px 10px;
+    }
+    .profile__notification-info {
+        right: -110px;
+    }
+}
+@media(max-width: 340px){
+    .dispute__modal{
+        padding: 20px 3px;
     }
 }
