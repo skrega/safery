@@ -32,61 +32,70 @@
         font-weight: 400;
         color: #4A4A4A; 
         transition: all .3s;
+        position: relative;
+        padding-left: 53px;
         svg{
             position: absolute;
             left: 12px;
             top: -1px;
         }
-        &::before{
-            top: -12px;   
+    }
+    &__login::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: -12px;   
+        background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    &__login:hover{
+        color: #7D4F9E;
+        svg path{
+            stroke: #7D4F9E;
         }
-        &:hover{
-            color: #7D4F9E;
-            svg path{
-                stroke: #7D4F9E;
-            }
-        }
+    }
+    &__icon{
+        background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+        background-blend-mode: soft-light, normal;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: -6px;
+        left: 0;
     }
     &__language{
         position: relative;
+        display: flex;
+        align-items: center;
         svg{
             position: absolute;
-            z-index: 11;
-            top: 3px;
-            left: 9px;
+            left: 7px;
+            top: 7px;
         }
-        &:hover{
-            .jq-selectbox__select{
-                color: #7D4F9E;
-            }
-            svg path{
-                fill: #7D4F9E;
-            }
+       
+    } 
+    &__language:hover{
+        .jq-selectbox__trigger-arrow{
+            background-image: url(../images/purple-arrow.svg);
         }
-    }
-    .jq-selectbox::before{
-        top: -7px;
-    }
-    &__login,
-    .jq-selectbox{
-        position: relative;
-        padding-left: 52px;
-        &::before{
-            content: "";
-            position: absolute;
-            background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
-            background-blend-mode: soft-light, normal;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            left: 0;
+        .jq-selectbox__select{
+            color: #7D4F9E;
+        }
+        svg path{
+            fill: #7D4F9E;
         }
     }
     .jq-selectbox__select {
         height: 32px;
-        padding: 0 31px 0 0px;
+        padding: 0 31px 0 50px;
         border: none;
         border-bottom-color: transparent;
         border-radius: 0;
@@ -114,22 +123,8 @@
         border-color: transparent;
         border: none;
     }
-}
-.language__select{
-    position: relative;
-    svg{
-        position: absolute;
-        z-index: 11;
-        top: 3px;
-        left: 9px;
-    }
-    &:hover{
-        .jq-selectbox__select{
-            color: #7D4F9E;
-        }
-        svg path{
-            fill: #7D4F9E;
-        }
+    .jq-selectbox__dropdown{
+        top: 37px !important;
     }
 }
 //end header

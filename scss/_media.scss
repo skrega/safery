@@ -493,9 +493,6 @@
     .logo__mobile{
         display: block; 
     }
-    .language__select{
-        display: none;
-    }
     .profile__navigation-menu{
         display: block;
     }
@@ -660,6 +657,32 @@
     .reviews__item {
         width: 60%;
     }
+    .header__language-select{
+        .jq-selectbox__select{
+            font-size: 0;
+        }
+        .jq-selectbox__dropdown{
+            width: 100%;
+        }
+        .jq-selectbox__trigger{
+            display: none;
+        }
+    }
+    .header__login span{
+        display: none;
+    }
+    .header__login::before{
+        top: -21px;
+    }
+    .header__login svg{
+        top: -11px;
+    }
+    .header .jq-selectbox__select{
+        padding: 0 0 0 50px;
+    }
+    .particles-wrapper{
+        width: 100%;
+    }
 }
 @media(max-width: 810px){
     .profile-partner__items.active-tab{
@@ -778,7 +801,8 @@
     .deal__create.inner,
     .agree-condition__inner.inner,
     .profile__output.inner,
-    .settings__finance.inner{
+    .settings__finance.inner,
+    .history__inner.inner{
         background: transparent;
         background-blend-mode: inherit;
         border: none;
@@ -847,13 +871,13 @@
             position: absolute;
             left: -12px;
             right: 0;
-            top: 40px;
+            top: 40 px;
             height: 0.5px;
             background-color: #C4C4C4;
             width: 130%;
-
         }
     }
+    
     .profile__tabs .deal__about{
         margin: 0;
     }
@@ -869,10 +893,6 @@
         width: 100%;
     }
     .history__inner.inner{
-        box-shadow: none;
-        background: transparent;
-
-        border-radius: 0;
         .profile__item-head{
             margin-top: 0;
         }
@@ -1078,6 +1098,23 @@
         text-transform: uppercase; 
         padding-bottom: 20px;
         margin-bottom: 20px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            left: -10px;
+            right: 0;
+            width: 105%;
+            bottom: 0;
+            border-bottom: 0.5px solid #C4C4C4;
+        }
+    }
+    .profile__item-head{
+        border: none;
+    }
+    .profile__deal,
+    .profile__item-title{
         position: relative;
         &::before{
             content: "";
@@ -1402,11 +1439,6 @@
     .header__login span{
         display: none;
     }
-    .language__select{
-        .jq-selectbox__select{
-            display: none;
-        }
-    }
     .header__login::before, .header .jq-selectbox::before{
         top: -21px;
     }
@@ -1415,9 +1447,6 @@
     }   
     .header__login svg{
         top: -10px;
-    }
-    .language__select svg{
-        top: 1px;
     }
     .profile__tab-span{
         display: none;
