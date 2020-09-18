@@ -1591,10 +1591,16 @@
         max-width: 953px;
         width: 100%;
         position: relative;
+        .jq-selectbox .placeholder{
+            font-size: 0;
+        }
     }
     &__finance-input{
         width: 100%;
         padding-right: 30px;
+        &::placeholder{
+            font-size: 0;
+        }
     }
     &__finance-select{
         width: 100%;
@@ -1665,6 +1671,9 @@
     }
     &__items-btn{
         margin-bottom: 30px;
+    }
+    &__inner-head{
+        display: none;
     }
     .profile__user-avatar{
         width: 102px;
@@ -1764,7 +1773,7 @@
 
     }
     &__inner {
-        min-height: 730px;
+        min-height: 780px;
     }
     &__head{
         padding: 40px 40px 25px;
@@ -1798,6 +1807,7 @@
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__statistics .profile-partner__row{
         max-width: 221px;
@@ -1850,6 +1860,7 @@
         margin-top: 20px;
     }
     &-date{
+        margin-top: 18px;
         text-align: right;
         font-size: 13px;
         line-height: 15px;
