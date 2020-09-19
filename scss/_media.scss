@@ -78,6 +78,9 @@
     .settings__item:nth-child(1) {
         width: 72%;
     }
+    .profile .jq-selectbox__dropdown {
+        left: 5px;
+    }
 }
 @media(max-width: 1400px){
     .main__safery-bg{

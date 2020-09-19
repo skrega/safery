@@ -59,40 +59,6 @@
             stroke: #7D4F9E;
         }
     }
-    &__icon{
-        background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
-        background-blend-mode: soft-light, normal;
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        position: absolute;
-        top: -6px;
-        left: 0;
-    }
-    &__language{
-        position: relative;
-        display: flex;
-        align-items: center;
-        svg{
-            position: absolute;
-            left: 7px;
-            top: 7px;
-        }
-       
-    } 
-    &__language:hover{
-        .jq-selectbox__trigger-arrow{
-            background-image: url(../images/purple-arrow.svg);
-        }
-        .jq-selectbox__select{
-            color: #7D4F9E;
-        }
-        svg path{
-            fill: #7D4F9E;
-        }
-    }
     .jq-selectbox__select {
         height: 32px;
         padding: 0 31px 0 50px;
@@ -741,9 +707,6 @@
             top: 4px;
             left: 6px;
         }
-    }
-    .language__select svg {
-        top: 4px;
     }
     .language__select .jq-selectbox::before{
         top: -4px;
