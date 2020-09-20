@@ -57,7 +57,7 @@
         width: 41%;
     }
     .footer.support .footer__disign{
-        margin-right: 60px;
+        margin-right: 190px;
     }
     .footer__img {
         right: -330px;
@@ -80,6 +80,9 @@
     }
     .profile .jq-selectbox__dropdown {
         left: 5px;
+    }
+    .footer__disign-main{
+        margin-right: 120px;
     }
 }
 @media(max-width: 1400px){
@@ -161,9 +164,6 @@
             width: 25vw;
         }
     }
-    .footer__disign{
-        margin-right: 120px;
-    }
     .footer__img {
         right: -270px;
     }
@@ -180,7 +180,7 @@
         right: -150px;
     }
     .footer.support .footer__disign {
-        margin-right: 150px;
+        margin-right: 70px;
     }
     .deal__create-inner {
         padding: 50px 20px 35px;
@@ -240,9 +240,6 @@
     .support__bg {
         width: 530px;
         right: -190px;
-    }
-    .footer__disign {
-        margin-right: 70px;
     }
     .deal__about-box{
         padding: 20px 6px;
