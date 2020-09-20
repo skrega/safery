@@ -919,8 +919,8 @@
     .profile__output-form,
     .payment__form{
         margin-top: 20px;
-        background: linear-gradient(317.7deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 105.18%),#F6F6F6;
-        background-blend-mode: soft-light, normal;
+        background: none;
+        background-blend-mode: color;
         border: 1px solid rgba(255,255,255,0.4);
         box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px rgba(166,171,189,0.37);
         border-radius: 7px;
