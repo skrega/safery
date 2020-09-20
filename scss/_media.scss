@@ -802,13 +802,25 @@
     .profile-partner__btn{
         margin: 0 15px 10px;
     }
+    .payment__content::before,
+    .payment__title::before{
+        display: none;
+    }
+    .payment__content,
+    .payment__title:nth-child(2){
+        margin-bottom: 12px;
+    }
+    .payment__row{
+        flex-direction: column;
+    }
 }
 @media(max-width: 768px){
     .deal__create.inner,
     .agree-condition__inner.inner,
     .profile__output.inner,
     .settings__finance.inner,
-    .history__inner.inner{
+    .history__inner.inner,
+    .payment__inner.inner{
         background: transparent;
         background-blend-mode: inherit;
         border: none;
@@ -904,7 +916,8 @@
         }
     }
     .history__table,
-    .profile__output-form{
+    .profile__output-form,
+    .payment__form{
         margin-top: 20px;
         background: linear-gradient(317.7deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.4) 105.18%),#F6F6F6;
         background-blend-mode: soft-light, normal;
@@ -916,6 +929,9 @@
         font-weight: 300;
         font-size: 15px;
         line-height: 18px;
+    }
+    .payment__form{
+        padding: 15px;
     }
     .history__table-title{
         color: #646464;
@@ -991,7 +1007,7 @@
     .deal__create-about{
         margin-top: 0;
     }
-   
+    
     .deal__about-descr.inactive {
         border-bottom: none;
     }
@@ -1296,7 +1312,8 @@
     .settings__finance-inner{
         padding: 30px 15px 15px;
     }
-    .profile-partner {
+    .profile-partner,
+    .payment {
         padding-bottom: 135px;
     }
     .options__modal-title {
@@ -1337,6 +1354,21 @@
         left: 0;
         right: 0;
         margin: 0 auto;
+    }
+    .payment__pay{
+        flex-direction: column;
+    }
+    .radio-inner{
+        margin-bottom: 15px;
+    }
+    .payment__form .radio-inner+.radio-inner {
+        margin-left: 0px;
+    }
+    .payment__price {
+        max-width: 100%;
+    }
+    .payment__btn {
+        margin-top: 30px;
     }
 }
 @media(max-width: 550px){
@@ -1439,6 +1471,9 @@
     }
     .confirmation-success__content span{
         margin-bottom: 5px;
+    }
+    .payment__btn{
+        width: 100%;
     }
 }
 @media(max-width: 475px){
@@ -1562,6 +1597,10 @@
     }
     .profile-partner__btn {
         width: 92%;
+    }
+    .deal__about-images{
+        max-width: 258px;
+        margin: 0 auto;
     }
 }
 @media(max-width: 374px){

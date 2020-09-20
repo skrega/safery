@@ -140,6 +140,10 @@
    &__safe-mobile{
        display: none;
    }
+   .particles{
+       max-width: 580px;
+       margin: 0 auto;
+   }
    .particles-canvas{
         left: 250px;
    }
@@ -712,7 +716,7 @@
         top: -4px;
     }
     .jq-selectbox__dropdown{
-        left: 43px;
+        left: 0px;
     }
     &__balance{
         margin: 0px 0 50px;
@@ -1387,6 +1391,7 @@
     &__content{
         width: 157px;
         margin-right: 50px;
+        margin-bottom: 15px;
         &::before{
             top: 16px;
         }
@@ -1484,7 +1489,8 @@
         border-bottom: none;
     }
     &__table-item:nth-child(1){
-        border-radius: 7px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
         border-top: 0.5px solid #C4C4C4;
     }
     &__table-item:last-child{
