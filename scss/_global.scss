@@ -441,6 +441,9 @@ textarea{
         top: 37px !important;
     }
 }
+.header__language.language__select{
+    height: 34px;
+}
 .language__select:hover{
     .jq-selectbox__trigger-arrow{
         background-image: url(../images/purple-arrow.svg);
