@@ -686,6 +686,9 @@
     .particles-wrapper{
         width: 100%;
     }
+    .profile .language__select{
+        display: none;
+    }
 }
 @media(max-width: 810px){
     .profile-partner__items.active-tab{
