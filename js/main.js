@@ -129,12 +129,11 @@ $(function(){
     });
 
    
-  
-    // $(".particles-button").on("click", function(e){
-    //     e.preventDefault();
-    //     $('.button__wrapper').on("transitionend", () => {
-    //       window.location.href = $(this).attr("href");
-    //     });
-    // })
-    
+    $(".particles-button").click(function() {
+
+        var href = $('.particles-button').attr('href');
+        setTimeout(function() {window.location = href}, 1000);
+        return false;
+        
+    });
 });
