@@ -129,11 +129,10 @@ $(function(){
     });
 
    
-    $(".particles-button").click(function() {
-
+    $(".particles-button").on('click', function() {
         var href = $('.particles-button').attr('href');
         setTimeout(function() {window.location = href}, 1000);
         return false;
-        
+
     });
 });
