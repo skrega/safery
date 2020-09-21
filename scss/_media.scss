@@ -879,7 +879,7 @@
         padding: 0;
     }
     .profile__item-head{
-        font-weight: 400;
+        font-weight: 500;
         padding-left: 0;
         padding-top: 0;
         margin-top: 50px;
@@ -1601,18 +1601,20 @@
         max-width: 258px;
         margin: 0 auto;
     }
+    .profile-partner .profile-partner-rate .profile-partner__row {
+        width: 396px;
+    }
 }
 @media(max-width: 374px){
     .creating-invitation__input:nth-child(2){
         overflow-x: scroll;
     }   
-    .creating-second .creating__table-buttons{
+    .creating__table-buttons{
+        justify-content: space-between;
         flex-wrap: wrap;
-        justify-content: center;
-    }   
-    .creating__table-btn:nth-child(2) {
-        margin-left: 0px;
-        margin-top: 15px;
+    }
+    .creating-second .creating__table-buttons {
+        margin: 21px 7px 40px 7px;
     }
     .profile__output-form .profile__output-currency{
         margin: 10px 0;
@@ -1621,10 +1623,10 @@
     .profile__output-form .profile__output-input {
         width: 100%;
     }
-    .deal__about-column, .deal__about-inner{
+    .deal__step-second.descr .deal__about-column, .deal__about-inner{
         flex-wrap: wrap;
     }
-    .deal__about-box:nth-child(1){
+    .deal__step-second.descr .deal__about-box:nth-child(1){
         border-bottom: 0.5px solid #C4C4C4;
         border-right: none;
     }
@@ -1634,6 +1636,7 @@
     .deal__about-box {
         padding: 20px 3px 20px 10px;
     }
+   
 }
 @media(max-width: 365px){
     h1{
@@ -1685,7 +1688,10 @@
         margin: 0 13px;
     }
     .deal__create-step:nth-child(1)::before {
-        left: 20px;
+        left: 19px;
+    }
+    .deal__create-step:nth-child(1)::after {
+        left: 33%;
     }
     .profile__output-currency{
         margin: 0;
@@ -1716,9 +1722,33 @@
     .confirmation-success {
         padding: 15px;
     }
+    .creating__table-btn:nth-child(2) {
+        margin-left: 0;
+    }
+    .profile-partner .profile-partner-rate .profile-partner__row {
+        width: 99%;
+    }
+    .profile-partner .profile-partner-rate .jq-ry-container {
+        width: 116px !important;
+    }
 }
 @media(max-width: 340px){
     .dispute__modal{
         padding: 20px 3px;
+    }
+    .deal__create-step:nth-child(1)::before {
+        left: 11px;
+    }
+    .profile-partner .profile-partner-rate .profile-partner__row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-partner__rate.rate-star.jq-ry-container{
+        margin-top: 10px;
+    }
+}
+@media(max-width: 325px){
+    .creating__table-btn:nth-child(2) {
+        margin-top: 20px;
     }
 }
