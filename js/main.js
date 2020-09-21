@@ -130,11 +130,11 @@ $(function(){
 
    
   
-    $(".particles-button").on("click", function(e){
-        e.preventDefault();
-        $('.button__wrapper').on("transitionend", () => {
-          window.location.href = $(this).attr("href");
-        });
-    })
+    // $(".particles-button").on("click", function(e){
+    //     e.preventDefault();
+    //     $('.button__wrapper').on("transitionend", () => {
+    //       window.location.href = $(this).attr("href");
+    //     });
+    // })
     
 });
