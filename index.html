@@ -77,8 +77,6 @@
                 <picture>
                     <img class="main__img-button" src="images/main-button.png" srcset="images/main-button@2x.png, 2x, images/main-button@3x.png, 3x" alt="">
                 </picture>
-               
-               
             </div>
         </div>
     </section>
@@ -390,21 +388,51 @@
     </footer>
 
 
-    <div id="login" class="login__modal" style="display: none;">
+    <div id="login" class="login__modal modal" style="display: none;">
         <div class="login__form">
             <form>
-                <div class="login__title">
+                <div class="login__title modal__title">
                     Вход
                 </div>
-                <input class="input login__form-input" type="email" placeholder=" E-mail" required>
-                <input class="input login__form-input" type="password" placeholder="Пароль" required>
-                <button class="login__form-btn button" type="submit">Продолжить</button>
-                <a class="login__form-register" href="#">Зарегистрироваться</a>
-                <a class="login__form-problem" href="#">Проблемы со входом?</a>
+                <input class="input login__form-input modal__input" type="email" placeholder=" E-mail" required>
+                <input class="input login__form-input modal__input" type="password" placeholder="Пароль" required>
+                <button class="login__form-btn modal__btn button" type="submit">Продолжить</button>
+                <a class="login__form-register modal__text" data-fancybox data-src="#registration" href="javascript:;">Зарегистрироваться</a>
+                <a class="login__form-problem modal__link" data-fancybox data-src="#password__recovery" href="javascript:;">Проблемы со входом?</a>
             </form>
         </div>
     </div>
 
+    <div id="registration" class="registration modal" style="display: none;">
+        <div class="registration__form">
+            <form>
+                <div class="registration__title modal__title">
+                    Регистрация
+                </div>
+                <input type="email" class="input registration__form-input modal__input" placeholder="E-mail" required>
+                <input type="password" class="input registration__form-input modal__input" placeholder="Пароль" required>
+                <button class="registration__form-btn modal__btn button" type="submit">Продолжить</button>
+                <div class="modal__text">
+                    <a class="registration__link-login" data-fancybox data-src="#login" href="javascript:;">Воити</a> Если вы уже зарегистрированы
+                </div>
+                <a class="modal__link" data-fancybox data-src="#password__recovery" href="javascript:;">Проблемы со входом?</a>
+            </form>
+        </div>
+    </div>
+    <div id="password__recovery" class="recovery modal" style="display: none;">
+        <div class="password__recovery-form">
+            <form>
+                <div class="password__recovery-title modal__title">
+                    Восстановление пароля
+                </div>
+                <input type="email" class="password__recovery-input input modal__input" placeholder="E-mail" required>
+                <div class="password__recovery-text">
+                    На  E-mail, указанный при регистрации будет выслано письмо для восстановления пароля
+                </div>
+                <button class="password__recovery-btn modal__btn button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="libs/fancybox-master/jquery.fancybox.min.js"></script>

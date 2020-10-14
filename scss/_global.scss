@@ -518,30 +518,46 @@ textarea{
     color: #7D4F9E;
 }
 //file input end
-//start login__modal
+
+//start modal
+.modal{
+    background-color: #F5F5F5;
+    border-radius: 7px;
+    max-width: 350px;
+    padding: 50px 50px 31px;
+    text-align: center;
+}
+.modal__title{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #6A3492;
+    margin-bottom: 10px;
+}
+.modal__input{
+    width: 100%;
+    margin-top: 20px;
+}
+.modal__btn{
+    margin-top: 50px;
+    border: none;
+}
+.modal__link{
+    font-size: 13px;
+    line-height: 15px;
+    color: #999999;
+    display: block;
+    text-decoration-line: underline;
+}
+.modal__text{
+    font-size: 16px;
+    line-height: 19px;
+    color: #646464;
+    margin: 20px 0 10px;
+}
+
 .login{
-    &__modal{
-        background-color: #F5F5F5;
-        border-radius: 7px;
-        max-width: 350px;
-        padding: 50px 50px 31px;
-    }
-    &__title{
-        font-weight: 900;
-        font-size: 30px;
-        line-height: 35px;
-        text-align: center;
-        color: #6A3492;
-        margin-bottom: 10px;
-    }
-    &__form-input{
-        width: 100%;
-        margin-top: 20px;
-    }
-    &__form-btn{
-        margin-top: 50px;
-        border: none;
-    }
     &__form-register,
     &__form-problem{
         font-weight: 400;
@@ -549,20 +565,29 @@ textarea{
         display: block;
         text-decoration-line: underline;
     }
-    &__form-register{
-        font-size: 16px;
-        line-height: 19px;
-        color: #646464;
-        margin: 20px 0 10px;
-    }
-    &__form-problem{
-        font-size: 13px;
-        line-height: 15px;
-        color: #999999;
-    }
-}
-//end login__modal
 
+}
+
+.registration{
+    padding: 50px 32px 31px;
+}
+.registration__link-login{
+    font-weight: 400;
+    text-decoration: underline;
+}
+.recovery{
+    padding: 50px 37px 31px;
+}
+.password__recovery-text{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 10px;
+    color: #646464;
+}
+
+//end modal
 
 .options__modal{
     background-color: #F5F5F5;
